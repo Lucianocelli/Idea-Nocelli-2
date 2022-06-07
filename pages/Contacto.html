@@ -12,116 +12,138 @@
 </head>
 
 <body>
-	<div class="grilla">
-		<header class="border flexible">
-			<div class="barraInicial">
-				<p>Header</p>
-				<img class="img0" src="https://directoriosustentable.com/wp-content/uploads/nodo-logo.jpg" alt="">
-			</div>
-			<img class="portada" src="../img/8.JPG" alt="">
+    <nav class="mb-5">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../img/Sello.png" alt="" width="150">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/Tienda.html">Tienda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/Contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/Galeria.html">Galeria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/Tips.html">Tips</a>
+                        </li>
+                    </ul>
+                </div>
+                <nav class="navbar navbar-light bg-light">
+                    <div class="container-fluid">
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-secondary" type="submit">Busqueda</button>
+                        </form>
+                    </div>
+                </nav>
+            </div>
+        </nav>
+    </nav>
 
-			<form action="" class="idiomas">
-				<select name="Lenguajes">
-					<option>Español</option>
-					<option>Ingles</option>
-					<option>Aleman</option>
-					<option>Italiano</option>
-					<option>Chino</option>
-				</select>
-			</form>
+    <form action="" class="idiomas">
+        <select name="Lenguajes">
+            <option>Español</option>
+            <option>Ingles</option>
+            <option>Aleman</option>
+            <option>Italiano</option>
+            <option>Chino</option>
+        </select>
+    </form>
 
-		</header>
+    <h1 class="display-1 text-center">
+        Contactanos
+    </h1>
 
-		<nav class="mb-5">
-			<nav class="navbar navbar-expand-lg navbar-light bg-light">
-				<div class="container">
-					<a class="navbar-brand" href="../index.html">
-						<img src="../img/Sello.png" alt="" width="150">
-					</a>
-					<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-						data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-						aria-expanded="false" aria-label="Toggle navigation">
-						<span class="navbar-toggler-icon"></span>
-					</button>
-					<div class="collapse navbar-collapse" id="navbarSupportedContent">
-						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-							<li class="nav-item">
-								<a class="nav-link" aria-current="page" href="../index .html">Inicio</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="./Tienda.html">Tienda</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#">Contacto</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="./Galeria.html">Galeria</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="./Tips.html">Tips</a>
-							</li>
-						</ul>
-					</div>
-					<nav class="navbar navbar-light bg-light">
-						<div class="container-fluid">
-							<form class="d-flex">
-								<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-								<button class="btn btn-outline-secondary" type="submit">Busqueda</button>
-							</form>
-						</div>
-					</nav>
-				</div>
-			</nav>
-		</nav>
+    <section id="servicios" class="border container-lg">Seccion Servicios
+        <h4>Subscribite para enterarte de todas las promociones y tener un ¡10% OFF!</h4>
+        <fieldset>
+            <form action="enviar.php" method="post" enctype="application/x-www">
+                <h2>Subscripcion</h2>
+                Nombre <input type="text" required placeholder="Nombre completo"> <br>
+                <hr>
+                Email <input type="email" required placeholder="Email@gmail.com"> <br>
+                <hr>
+                Edad <input type="number" placeholder="Solo números"> <br>
+                <hr>
+                Telefono <input type="text" required plancecholder="escribe tu telefono"
+                    placeholder="Con caracteristica incluida"> <br>
+                <hr>
+                Cumpleaños <input type="date"> <br>
+        </fieldset>
+        <input type="button" value="Enviar"> <br>
+        </form>
+    </section>
 
-		<section id="productos" class="border">Seccion Productos
-			<p class="bienvenidos">Contacto</p>
-			<h2>Redes sociales</h2>
+    <div>
+        <p></p>
+    </div>
 
-			<a href="https://www.instagram.com/nodo.sustentable/" target="_blank">Instagram</a> <br>
-			<hr>
-		
-		</section>
+    <form action="" class="border container-lg color-secondary">
+        <h2>Mensajes</h2>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+    </form>
 
-		<section id="servicios" class="border">Seccion Servicios
-			<h4>Subscribite para enterarte de todas las promociones y tener un ¡10% OFF!</h4>
-			<fieldset>
-				<form action="enviar.php" method="post" enctype="application/x-www">
-					<h2>Contacto</h2>
-					Nombre <input type="text" required placeholder="Nombre completo"> <br>
-					<hr>
-					Email <input type="email" required placeholder="Email@gmail.com"> <br>
-					<hr>
-					Edad <input type="number" placeholder="Solo números"> <br>
-					<hr>
-					Telefono <input type="text" required plancecholder="escribe tu telefono"
-						placeholder="Con caracteristica incluida"> <br>
-					<hr>
-					Cumpleaños <input type="date"> <br>
-			</fieldset>
-			<input type="button" value="Enviar"> <br>
-			</form>
+    <div>
+        <p></p>
+    </div>
 
-		</section>
+    <section>
+        <div class="container">
+            <div class="row">
+                <section id="productos" class="border">Seccion Productos
+                    <p class="bienvenidos">Contacto</p>
+                    <h2>Redes sociales</h2>
 
-		<footer class="border">Pie de Página
-			<img class="img"
-				src="https://lh3.googleusercontent.com/p/AF1QipMftBCzLcU9lhbWZyI3RZoodL3PK4llw3IvoI6P=w1080-h608-p-no-v0"
-				alt="Logo Nodo">
-			<div>
-				<fieldset class="rectangulofinal">
-					<h4 class="rect">Ubicación: 25 DE MAYO 1592 | Cordoba Capital</h4>
-					<iframe
-						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.236957833784!2d-64.16891648485216!3d-31.4075968814071!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x943299ff2f17d70b%3A0x1514ff3b141795f2!2sNodo%20sustentable!5e0!3m2!1ses-419!2sar!4v1652126676462!5m2!1ses-419!2sar"
-						width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-						referrerpolicy="no-referrer-when-downgrade"></iframe>
-					<h4 class="rect"> @nodo.sustentable</h4>
-				</fieldset>
-			</div>
-			<div class="firma">
-				<h6>Sitio web realizado por Lucia Nocelli</h6>
-			</div>
-		</footer>
+                    <a href="https://www.instagram.com/nodo.sustentable/" target="_blank">Instagram</a> <br>
+                    <hr>
+
+                </section>
+            </div>
+        </div>
+    </section>
+
+    <div>
+        <p></p>
+    </div>
+    
+    <footer class="border">Pie de Página
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 animate__animated animate__bounce">
+                    <h4 class="rect">Ubicación: 25 DE MAYO 1592 | Cordoba Capital</h4>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.236957833784!2d-64.16891648485216!3d-31.4075968814071!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x943299ff2f17d70b%3A0x1514ff3b141795f2!2sNodo%20sustentable!5e0!3m2!1ses-419!2sar!4v1652126676462!5m2!1ses-419!2sar"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="col-md-2">
+                    <h4 class="rect"> @nodo.sustentable</h4>
+                    <h6>Sitio web realizado por Lucia Nocelli</h6>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 		<div class="fijado">
 			<img class="dospuntocero"
