@@ -1,6 +1,7 @@
 @import 'footer';
 @import 'variables';
 @import 'mixins';
+
 * {
     margin: 0cm;
     padding: 0cm;
@@ -79,10 +80,8 @@ h3 {
     flex-direction: row;
 }
 
-.img {
-    text-align: center;
-    width: 100%;
-    height: 20%;
+.img .clip-path {
+    clip-path: ellipse(50% 21% at 50% 50%);
 }
 
 .bienvenidos {
