@@ -285,4 +285,35 @@ a {
 .footer{
     background-color: $fondo;
     text-decoration: $text;
+    clip-path: ellipse(65% 34% at 65% 97%);
+}
+
+.Fondofinal{
+    width: 100%;
+    position: relative;
+    height: 640px;
+    background: #d66d767e;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #e2958779, #d66d767f);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #e2958779, #d66d767d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+
+    background-image: url("../img/portada\ nodo.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.wave {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    -webkit-box-shadow: 10px 10px 40px 0px rgba(181,175,181,1);
+-moz-box-shadow: 10px 10px 40px 0px rgba(181,175,181,1);
+box-shadow: 10px 10px 40px 0px rgba(181,175,181,1);
+}
+
+.jabonesfoti {
+    -webkit-box-shadow: 10px 10px 40px 0px rgba(181,175,181,1);
+-moz-box-shadow: 10px 10px 40px 0px rgba(181,175,181,1);
+box-shadow: 10px 10px 40px 0px rgba(181,175,181,1);
 }
