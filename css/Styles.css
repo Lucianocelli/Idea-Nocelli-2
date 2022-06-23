@@ -109,11 +109,10 @@
 }
 
 /*Responsive*/
-@media and (max-width: 768px; ) {
+@media and (max-width: 768px; ) 
     .container {
         grid-template-areas:
             "Nav Nav Nav"
             "Back-image Back-image Wave"
             "Footer Footer Footer";
     }
-}
