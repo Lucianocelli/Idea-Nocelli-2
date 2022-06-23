@@ -2,6 +2,7 @@
 @import 'variables';
 @import 'mixins';
 
+/*General*/
 * {
     margin: 0cm;
     padding: 0cm;
@@ -9,11 +10,51 @@
 }
 
 .fijado {
-    width: 40px;
-    height: 40px;
+    width: 20%;
+    height: auto;
     position: fixed;
     bottom: 30px;
-    right: 30px; }
+    right: 30px;
+}
+/*index*/
+.container {
+    display: grid;
+    grid-template-columns: 50% 50% 30%;
+    grid-template-rows: 20% 40% 20% 20%;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "Nav Nav Nav"
+        "Back-image Back-image Back-image"
+        "Wave Wave Wave"
+        "Footer Footer Footer";
+}
+
+.Nav {
+    grid-area: Nav;
+}
+
+.Back-image {
+    grid-area: Back-image;
+}
+
+.portada {
+    background-color: hsla(34, 78%, 91%, 0.639);
+}
+
+.Wave {
+    grid-area: Wave;
+}
+
+.Footer {
+    grid-area: Footer;
+}
+
+.wave {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
 
 .contenedor {
     padding: 60px 0;
@@ -23,38 +64,17 @@
     overflow: hidden;
 }
 
-.titulo{
+.titulo {
     color: #d66d767d;
     font-size: 30px;
     text-align: center;
     margin-bottom: 60px;
 }
 
-.portada{
+.portada {
     width: 100%;
     position: relative;
-    height: 640px;
-    background: hsla(355, 56%, 63%, 0.694);  
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, hsla(9, 61%, 71%, 0.677), #d66d767f);  
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #e2958779, #d66d767d), url(../img/resizer\ \(1\).jpg); 
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
-
-    background-image: url("../img/portada\ nodo.jpg");
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-}
-
-.wave {
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-    -webkit-box-shadow: 10px 10px 40px 0px rgba(181,175,181,1);
--moz-box-shadow: 10px 10px 40px 0px rgba(181,175,181,1);
-box-shadow: 10px 10px 40px 0px rgba(181,175,181,1);
+    height: auto;
 }
 
 .contenedor-footer {
@@ -62,13 +82,13 @@ box-shadow: 10px 10px 40px 0px rgba(181,175,181,1);
     border: none;
 }
 
-.content-foo{
+.content-foo {
     margin-bottom: 20px;
     text-align: center;
 }
 
-.content-foo h4{
-border: none;
+.content-foo h4 {
+    border: none;
 }
 
 .content-foo p {
@@ -79,4 +99,21 @@ border: none;
 
 .titulo-final {
     font-size: 20px;
+}
+
+.Tit-portada {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Responsive*/
+@media and (max-width: 768px; ) {
+    .container {
+        grid-template-areas:
+            "Nav Nav Nav"
+            "Back-image Back-image Wave"
+            "Footer Footer Footer";
+    }
 }
