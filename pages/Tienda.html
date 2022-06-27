@@ -26,69 +26,6 @@
 
 <body>
 	<div class="containerTi">
-		<div class="Header">
-			<header class="mb-5 center">
-				<div class="container">
-					<div class="row">
-						<div class="col-xxl-12">
-							<header class="border flexible p-3 mb-2 bg-light text-dark mw-100">
-								<div class="barraInicial">
-
-									<div id="carouselExampleCaptions" class="carousel slide container"
-										data-bs-ride="carousel">
-										<div class="carousel-indicators">
-											<button type="button" data-bs-target="#carouselExampleCaptions"
-												data-bs-slide-to="0" class="active" aria-current="true"
-												aria-label="Slide 1"></button>
-											<button type="button" data-bs-target="#carouselExampleCaptions"
-												data-bs-slide-to="1" aria-label="Slide 2"></button>
-											<button type="button" data-bs-target="#carouselExampleCaptions"
-												data-bs-slide-to="2" aria-label="Slide 3"></button>
-										</div>
-										<div class="carousel-inner">
-											<div class="carousel-item active center">
-												<img src="../img/portada nodo.jpg" alt="...">
-												<div class="carousel-caption d-none d-md-block mw-100">
-												</div>
-											</div>
-											<div class="carousel-item center">
-												<img src="../img/portada nodo3.jpg" class="d-block w-100" alt="...">
-												<div class="carousel-caption d-none d-md-block mw-100">
-												</div>
-											</div>
-											<div class="carousel-item center">
-												<img src="../img/portada nodo4.jpg" alt="...">
-												<div class="carousel-caption d-none d-md-block mw-100">
-												</div>
-											</div>
-										</div>
-										<button class="carousel-control-prev" type="button"
-											data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-											<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-											<span class="visually-hidden">Previous</span>
-										</button>
-										<button class="carousel-control-next" type="button"
-											data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-											<span class="carousel-control-next-icon" aria-hidden="true"></span>
-											<span class="visually-hidden">Next</span>
-										</button>
-
-										<form action="" class="idiomas">
-											<select name="Lenguajes">
-												<option>Español</option>
-												<option>Ingles</option>
-												<option>Aleman</option>
-												<option>Italiano</option>
-												<option>Chino</option>
-											</select>
-										</form>
-
-							</header>
-						</div>
-					</div>
-				</div>
-			</header>
-		</div>
 
 		<div class="Nav">
 			<nav class="mb-5">
@@ -142,236 +79,217 @@
 
 		<div class="Tienda">
 			<div class="row g-0">
-				<div class="col-6 col-md-4">.col-6 .col-md-4</div>
-				<div class="col-sm-6 col-md-8">.col-sm-6 .col-md-8</div>
-			</div>
-			<main class="container">
-				<h1 class="display-1 text-center">
-					Tienda sustentable
-				</h1>
-				<section id="tarjetas" class="row g-5">
-					<article id="Crema" class="col-md-6 col-lg-4 col-xxl-3">
-						<div class="card text-center bg-light text-dark h-100 ">
-							<h3 class="card-header">Crema para pies</h3>
-							<img class="center" src="../img/Crema hidratante sin precio.jpg" alt="crema"
-								data-bs-toggle="crema" data-bs-target="#cremaPies" width="285">
-							<div class="card-body">
-								<p class="card-text">crema para pies</p>
-								<p class="lead precio">$580</p>
-							</div>
-							<div class="card-footer">
-								<a href="#" class="btn btn-outline-secondary btn-lg">Comprar</a>
-							</div>
-						</div>
-					</article>
-					<article class="col-md-6 col-lg-4 col-xxl-3" id="Mascarilla">
-						<div class="card text-center bg-light text-dark h-100">
-							<h3 class="card-header">Mascarilla facial</h3>
-							<img src="../img/Flyer arcilla verde.jpg" alt="buzo" data-bs-toggle="modal"
-								data-bs-target="#modalBuzo" width="285" />
-
-							<div class="card-body">
-								<p class="card-text">Mascarilla facial</p>
-								<p class="lead precio">$420</p>
-							</div>
-							<div class="card-footer">
-								<a href="#" class="btn btn-outline-secondary btn-lg">Comprar</a>
+				<div class="col-6 col-md-2">				
+					<div class="Comp">
+					<label for="customRange1" class="form-label">Rango de precios</label>
+					<input type="range" class="form-range" id="customRange1">
+					<section>
+						<div class="container">
+							<div class="row">
+								<div class="col-12">
+									<section id="productos" class="border">
+										<p class="bienvenidos">Catalogo</p>
+										<h3>Lista de productos</h3>
+										<!--  Lista no odenada  -->
+										<ul class="listadesordenada" id="ListaDesordenada">
+											<li>Cosmetica Natural</li>
+											<li>Deco Hogar</li>
+											<li>Accesorios</li>
+											<li>Kits de regalos</li>
+											<li>Atención personalizada</li>
+										</ul>
+									</section>
+								</div>
 							</div>
 						</div>
-					</article>
-					<article class="col-md-6 col-lg-4 col-xxl-3" id="Sorbete">
-						<div class="card text-center bg-light text-dark h-100">
-							<h3 class="card-header">Sorbete reutilizable</h3>
-							<img src="../img/Flyer sorbetes.jpg" alt="jean" data-bs-toggle="modal"
-								data-bs-target="#modalJean" width="285">
-
-							<div class="card-body">
-								<p class="card-text">Sorbete reutilizable</p>
-								<p class="lead precio">$100</p>
-							</div>
-							<div class="card-footer">
-
-								<a href="#" class="btn btn-outline-secondary btn-lg">Comprar</a>
-							</div>
-						</div>
-					</article>
-					<article class="col-md-6 col-lg-4 col-xxl-3" id="Shampoo">
-						<div class="card text-center bg-light text-dark h-100">
-							<h3 class="card-header">Shampoo solido</h3>
-							<img src="../img/Flyer peine nodo marron transparente.jpg" alt="campera"
-								data-bs-toggle="modal" data-bs-target="#modalCampera" width="285">
-
-							<div class="card-body">
-								<p class="card-text">Shampoo solido</p>
-								<p class="lead precio">$1000</p>
-							</div>
-							<div class="card-footer">
-
-								<a href="#" class="btn btn-outline-secondary btn-lg">Comprar</a>
-							</div>
-						</div>
-					</article>
-					<article class="col-md-6 col-lg-4 col-xxl-3" id="Aceite">
-						<div class="card text-center bg-light text-dark h-100">
-							<h3 class="card-header">Aceite natural</h3>
-							<img src="../img/Aceite de ricino.jpg" alt="Aceite" data-bs-toggle="modal"
-								data-bs-target="#modalZapatillas" width="285">
-
-							<div class="card-body">
-								<p class="card-text">Aceite de Ricino</p>
-								<p class="lead precio">$1100</p>
-							</div>
-							<div class="card-footer">
-
-								<a href="#" class="btn btn-outline-secondary btn-lg">Comprar</a>
-							</div>
-						</div>
-		</div>
-		</article>
-		<article class="col-md-6 col-lg-4 col-xxl-3" id="Cepilla">
-			<div class="card text-center bg-light text-dark h-100">
-				<h3 class="card-header">Peine de madera</h3>
-				<img src="../img/Peine madera promo producto.jpg" alt="peine" data-bs-toggle="modal"
-					data-bs-target="#modalMedias" width="285">
-
-				<div class="card-body">
-					<p class="card-text">Peine de madera</p>
-					<p class="lead precio">$800</p>
-				</div>
-				<div class="card-footer">
-
-					<a href="#" class="btn btn-outline-secondary btn-lg">Comprar</a>
+					</section>
 				</div>
 			</div>
-	</div>
-	</article>
-	<article class="col-md-6 col-lg-4 col-xxl-3" id="Aceite">
-		<div class="card text-center bg-light text-dark h-100">
-			<h3 class="card-header">Aceite natural</h3>
-			<img src="../img/Aceite de jojoba.jpg" alt="Aceite" data-bs-toggle="modal" data-bs-target="#modalZapatillas"
-				width="285">
 
-			<div class="card-body">
-				<p class="card-text">Aceite de Jojoba</p>
-				<p class="lead precio">$1100</p>
-			</div>
-			<div class="card-footer">
+				<div class="col-sm-6 col-md-9">
+					<section id="tarjetas" class="row g-5">
+						<article id="Crema" class="col-md-6 col-lg-4 col-xxl-3">
+							<div class="card text-center bg-light text-dark h-100 ">
+								<h3 class="card-header">Crema para pies</h3>
+								<img class="center" src="../img/Crema hidratante sin precio.jpg" alt="crema"
+									data-bs-toggle="crema" data-bs-target="#cremaPies" width="285">
+								<div class="card-body">
+									<p class="card-text">crema para pies</p>
+									<p class="lead precio">$580</p>
+								</div>
+								<div class="card-footer">
+									<a href="#" class="btn btn-outline-secondary btn-lg">Comprar</a>
+								</div>
+							</div>
+						</article>
+						<article class="col-md-6 col-lg-4 col-xxl-3" id="Mascarilla">
+							<div class="card text-center bg-light text-dark h-100">
+								<h3 class="card-header">Mascarilla facial</h3>
+								<img src="../img/Flyer arcilla verde.jpg" alt="buzo" data-bs-toggle="modal"
+									data-bs-target="#modalBuzo" width="285" />
 
-				<a href="#" class="btn btn-outline-secondary btn-lg">Comprar</a>
-			</div>
-		</div>
-		</div>
-	</article>
-	<article class="col-md-6 col-lg-4 col-xxl-3" id="Aceite">
-		<div class="card text-center bg-light text-dark h-100">
-			<h3 class="card-header">Vinchas reutilizables</h3>
-			<img src="../img/Flyer fondo letras.jpg" alt="Vincha" data-bs-toggle="modal"
-				data-bs-target="#modalZapatillas" width="285">
+								<div class="card-body">
+									<p class="card-text">Mascarilla facial</p>
+									<p class="lead precio">$420</p>
+								</div>
+								<div class="card-footer">
+									<a href="#" class="btn btn-outline-secondary btn-lg">Comprar</a>
+								</div>
+							</div>
+						</article>
+						<article class="col-md-6 col-lg-4 col-xxl-3" id="Sorbete">
+							<div class="card text-center bg-light text-dark h-100">
+								<h3 class="card-header">Sorbete reutilizable</h3>
+								<img src="../img/Flyer sorbetes.jpg" alt="jean" data-bs-toggle="modal"
+									data-bs-target="#modalJean" width="285">
 
-			<div class="card-body">
-				<p class="card-text">Vinchas reutilizables</p>
-				<p class="lead precio">$900</p>
-			</div>
-			<div class="card-footer">
+								<div class="card-body">
+									<p class="card-text">Sorbete reutilizable</p>
+									<p class="lead precio">$100</p>
+								</div>
+								<div class="card-footer">
 
-				<a href="#" class="btn btn-outline-secondary btn-lg">Comprar</a>
-			</div>
-		</div>
-		</div>
-	</article>
-	</section>
-	</main>
-	</div>
+									<a href="#" class="btn btn-outline-secondary btn-lg">Comprar</a>
+								</div>
+							</div>
+						</article>
+						<article class="col-md-6 col-lg-4 col-xxl-3" id="Shampoo">
+							<div class="card text-center bg-light text-dark h-100">
+								<h3 class="card-header">Shampoo solido</h3>
+								<img src="../img/Flyer peine nodo marron transparente.jpg" alt="campera"
+									data-bs-toggle="modal" data-bs-target="#modalCampera" width="285">
 
-	<div class="Comp">
-		<section>
-			<div class="container">
-				<div class="row">
-					<div class="col-3">
-						<section id="productos" class="border">
-							<p class="bienvenidos">Catalogo</p>
-							<h3>Lista de productos</h3>
-							<!--  Lista no odenada  -->
-							<ul class="listadesordenada" id="ListaDesordenada">
-								<li>Cosmetica Natural</li>
-								<li>Deco Hogar</li>
-								<li>Accesorios</li>
-								<li>Kits de regalos</li>
-								<li>Atención personalizada</li>
-							</ul>
-						</section>
-					</div>
-					<div class="col-9">
-						<section id="servicios" class="border">
-							<h4 class="comp">Comparacion entre marcas</h4>
-							<table class="comparacion" border="" cellspacing="10" cellpadding="5">
-								<tr>
-									<th>Nodo</th>
-									<th>Meraki</th>
-									<th>Kamikaze</th>
-									<th>Eco Opcion</th>
-									<th>Otras</th>
-								</tr>
-								<tr>
-									<td>Cosmetica</td>
-									<td>Deco Hogar</td>
-									<td>Accesorios</td>
-									<td>Belleza</td>
-									<td>Higiene</td>
-								</tr>
-								<tr>
-									<td>Calidad baja</td>
-									<td>Calidad media</td>
-									<td>Calidad alta</td>
-									<td>Calidad full</td>
-									<td>Calidad premium</td>
-								</tr>
-							</table>
-						</section>
-					</div>
+								<div class="card-body">
+									<p class="card-text">Shampoo solido</p>
+									<p class="lead precio">$1000</p>
+								</div>
+								<div class="card-footer">
+
+									<a href="#" class="btn btn-outline-secondary btn-lg">Comprar</a>
+								</div>
+							</div>
+						</article>
+						<article class="col-md-6 col-lg-4 col-xxl-3" id="Aceite">
+							<div class="card text-center bg-light text-dark h-100">
+								<h3 class="card-header">Aceite natural</h3>
+								<img src="../img/Aceite de ricino.jpg" alt="Aceite" data-bs-toggle="modal"
+									data-bs-target="#modalCampera" width="285">
+
+								<div class="card-body">
+									<p class="card-text">Aceite de Ricino</p>
+									<p class="lead precio">$1100</p>
+								</div>
+								<div class="card-footer">
+
+									<a href="#" class="btn btn-outline-secondary btn-lg">Comprar</a>
+								</div>
+							</div>
+						</article>
+						<article class="col-md-6 col-lg-4 col-xxl-3" id="Cepilla">
+							<div class="card text-center bg-light text-dark h-100">
+								<h3 class="card-header">Peine de madera</h3>
+								<img src="../img/Peine madera promo producto.jpg" alt="peine" data-bs-toggle="modal"
+									data-bs-target="#modalMedias" width="285">
+
+								<div class="card-body">
+									<p class="card-text">Peine de madera</p>
+									<p class="lead precio">$800</p>
+								</div>
+								<div class="card-footer">
+
+									<a href="#" class="btn btn-outline-secondary btn-lg">Comprar</a>
+								</div>
+							</div>
+						</article>
+						<article class="col-md-6 col-lg-4 col-xxl-3" id="Aceite">
+							<div class="card text-center bg-light text-dark h-100">
+								<h3 class="card-header">Aceite natural</h3>
+								<img src="../img/Aceite de jojoba.jpg" alt="Aceite" data-bs-toggle="modal"
+									data-bs-target="#modalZapatillas" width="285">
+
+								<div class="card-body">
+									<p class="card-text">Aceite de Jojoba</p>
+									<p class="lead precio">$1100</p>
+								</div>
+								<div class="card-footer">
+
+									<a href="#" class="btn btn-outline-secondary btn-lg">Comprar</a>
+								</div>
+							</div>
+						</article>
+						<article class="col-md-6 col-lg-4 col-xxl-3" id="Aceite">
+							<div class="card text-center bg-light text-dark h-100">
+								<h3 class="card-header">Vinchas reutilizables</h3>
+								<img src="../img/Flyer fondo letras.jpg" alt="Vincha" data-bs-toggle="modal"
+									data-bs-target="#modalZapatillas" width="285">
+
+								<div class="card-body">
+									<p class="card-text">Vinchas reutilizables</p>
+									<p class="lead precio">$900</p>
+								</div>
+								<div class="card-footer">
+									<a href="#" class="btn btn-outline-secondary btn-lg">Comprar</a>
+								</div>
+							</div>
+						</article>
+					</section>
 				</div>
 			</div>
-		</section>
-	</div>
+		</div>
 
-	<div class="Footer">
-		<footer class="border footer">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-8 animate__animated animate__bounce">
-						<h4 class="rect">Ubicación: 25 DE MAYO 1592 | Cordoba Capital</h4>
-						<iframe
-							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.236957833784!2d-64.16891648485216!3d-31.4075968814071!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x943299ff2f17d70b%3A0x1514ff3b141795f2!2sNodo%20sustentable!5e0!3m2!1ses-419!2sar!4v1652126676462!5m2!1ses-419!2sar"
-							width="500" height="50" style="border:0;" allowfullscreen="" loading="lazy"
-							referrerpolicy="no-referrer-when-downgrade"></iframe>
-					</div>
-					<div class="col-md-2">
-						<h4 class="rect"> @nodo.sustentable</h4>
-						<h6>Sitio web realizado por Lucia Nocelli</h6>
+		<div class="Footer">
+			<footer class="border footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-8 animate__animated animate__bounce">
+							<h4 class="rect">Ubicación: 25 DE MAYO 1592 | Cordoba Capital</h4>
+							<iframe
+								src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.236957833784!2d-64.16891648485216!3d-31.4075968814071!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x943299ff2f17d70b%3A0x1514ff3b141795f2!2sNodo%20sustentable!5e0!3m2!1ses-419!2sar!4v1652126676462!5m2!1ses-419!2sar"
+								width="500" height="50" style="border:0;" allowfullscreen="" loading="lazy"
+								referrerpolicy="no-referrer-when-downgrade"></iframe>
+							<div class="mb-3">
+								<label for="exampleFormControlInput1" class="form-label">Email
+									address</label>
+								<input type="email" class="form-control" id="exampleFormControlInput1"
+									placeholder="name@example.com">
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="Redes">
+								<div class="box__footer">
+									<h2>Redes Sociales</h2>
+									<a href="#"> <i class="fab fa-facebook-square"></i> Facebook</a>
+									<a href="#"><i class="fab fa-instagram-square"></i> Instagram</a>
+								</div>
+								<div class="footer-content-container">
+									<h3 class="website-logo"> Nodo Sustentable </h3>
+									<span class="footer-info">351 757 9745</span>
+									<span class="footer-info"> nodosustentable@gmail.com </span>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
-			</div>
-		</footer>
-	</div>
-
-	</div>
-
-	<section>
-		<div class="col-md-7">
-			<img class="img"
-				src="https://lh3.googleusercontent.com/p/AF1QipMftBCzLcU9lhbWZyI3RZoodL3PK4llw3IvoI6P=w1080-h608-p-no-v0"
-				alt="Logo Nodo">
+				<div class="col">
+					<div class="Copyright">
+						<div class="box__copyright">
+							<hr>
+							<p>&copy;2022 | Lucia Nocelli | <b>Diseñadora Integral</b></p>
+						</div>
+					</div>
+				</div>
+			</footer>
 		</div>
-	</section>
 
-	<div class="fijado">
-		<img class="dospuntocero"
-			src="https://i0.wp.com/productoskairos.com/wp-content/uploads/2020/07/logo-whatsapp-png.png?ssl=1" alt="">
+		<div class="fijado">
+			<img class="dospuntocero"
+				src="https://i0.wp.com/productoskairos.com/wp-content/uploads/2020/07/logo-whatsapp-png.png?ssl=1" alt="">
+		</div>
 	</div>
-
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-	</script>
+			<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+				integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+				crossorigin="anonymous">
+			</script>
 </body>
 
 

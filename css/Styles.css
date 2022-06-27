@@ -10,502 +10,442 @@
 }
 
 .fijado {
-    width: 20%;
+    width: auto;
     height: auto;
     position: fixed;
     bottom: 30px;
     right: 30px;
 }
 
-@include desktop{
-    display:inline-block;
-
-    
-/*index*/
-.container {
-    display: grid;
-    grid-template-columns: 10% 10% 10%;
-    grid-template-rows: 20% 40% 20% 20%;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-        "Nav Nav Nav"
-        "Back-image Back-image Back-image"
-        "Wave Wave Wave"
-        "Footer Footer Footer";
-}
-
-.Nav {
-    grid-area: Nav;
-}
-
-.Back-image {
-    grid-area: Back-image;
-}
-
-.portada {
-    background-color: hsla(34, 78%, 91%, 0.639);
-}
-
-.Footer {
-    grid-area: Footer;
-}
-
-.contenedor {
-    padding: 60px 0;
-    width: 90%;
-    max-width: 1000px;
-    margin: auto;
-    overflow: hidden;
-}
-
-.titulo {
-    color: #d66d767d;
-    font-size: 30px;
-    text-align: center;
-    margin-bottom: 60px;
-}
-
-.portada {
-    width: 100%;
-    position: relative;
-    height: auto;
-}
-
-.contenedor-footer {
-    flex-direction: column;
-    border: none;
-}
-
-.content-foo {
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.content-foo h4 {
-    border: none;
-}
-
-.content-foo p {
-    color: #d66d767d;
-    border-bottom: 1p solid #38292a7d;
-    padding-bottom: 20px;
-}
-
-.titulo-final {
-    font-size: 20px;
-}
-
-.Tit-portada {
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-/*Nuevo*/
-
-.head {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 63px;
-    background: #171717;
-    position: fixed;
-    width: 100%;
-    z-index: 100;
-}
-
-.navbar {
-    display: flex;
-    margin-right: 10px;
-}
-
-.logo {
-    margin-left: 30px;
-}
-
-.logo a {
-    text-decoration: none;
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 20px;
-}
-
-.navbar a {
-    display: block;
-    padding: 20px 20px;
-    color: #fff;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 20px;
-}
-
-.navbar a:hover {
-    background: #3f3f3f;
-}
-
-.header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.header {
-    height: 60vh !important;
-    background: url(img/header.jpg) no-repeat center;
-    background-size: cover;
-}
-
-.title {
-    margin-bottom: 40px;
-    font-size: 60px;
-    font-weight: 600;
-    text-transform: uppercase;
-    color: #fff;
-}
-
-p {
-    margin-bottom: 40px;
-    font-size: 18px;
-    color: #fff;
-    padding: 0 100px;
-}
-
-.btn {
-    display: inline-block;
-    margin-top: 15px;
-    padding: 10px 40px;
-    border: 2px solid #9c27b0;
-    color: #fff;
-    text-decoration: none;
-    background: #9c27b0;
-}
-
-.btn:hover {
-    background: none;
-
-}
-
-.btn-home {
-    display: flex;
-}
-
-.btn-home a {
-    margin: 0 10px;
-}
-
-
-.content {
-    height: 50vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.sau {
-    padding: 30px;
-    background: #1f1d1d
-}
-
-.box-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    text-align: center;
-
-}
-
-.box-container .box {
-    height: 11rem;
-    width: 17rem;
-    background: #101010;
-    text-align: center;
-    border-radius: 1rem;
-    box-shadow: 0 .3rem 5rem rgba(0, 0, 0, .5);
-    margin: 2rem;
-}
-
-.box-container .box i {
-    height: 3rem;
-    width: 3rem;
-    line-height: 3rem;
-    text-align: center;
-    border-radius: 50%;
-    color: #fff;
-    background: #9c27b0;
-    font-size: 2rem;
-    margin: 1rem 0;
-
-}
-
-.box-container .box h3 {
-    font-size: 20px;
-    color: #9c27b0;
-
-}
-
-.box-container .box p {
-    padding: 0 15px;
-    font-size: 16px;
-}
-
-.about {
-    background: #171717;
-}
-
-.price {
-    background: url(img/costos.jpg) no-repeat center;
-    background-attachment: fixed;
-    background-size: cover;
-    text-align: center;
-}
-
-
-.contact {
-    padding-top: 20px;
-    background: #171717;
-    padding-bottom: 0;
-}
-
-
-@media (max-width: 768px) {
-
-    .title {
-        margin-bottom: 0;
-        font-size: 40px;
-    }
-
-    .sau {
-        height: 100vh;
-    }
-
-    .navbar {
-        display: none;
-    }
-
-}
-
-/*Inicio*/
-
-.containerIn {
-    display: grid;
-    grid-template-columns: 50% 50% 50%;
-    grid-template-rows: 20% 20% 20% 20% 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-        "Header Header ."
-        "Nav Nav ."
-        "Nos Nos ."
-        "Wel Prod ."
-        "Footer Footer .";
-}
-
-.Header {
-    grid-area: Header;
-}
-
-.Nav {
-    grid-area: Nav;
-}
-
-.Nos {
-    grid-area: Nos;
-}
-
-.Wel {
-    grid-area: Wel;
-}
-
-.Prod {
-    grid-area: Prod;
-}
-
-.Footer {
-    grid-area: Footer;
-}
-
-/*Tienda*/
-.containerTi {
-    display: grid;
-    grid-template-columns: 50% 50% 50%;
-    grid-template-rows: 20% 20% 70% 20% 20%;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-        "Header Header ."
-        "Nav Nav ."
-        "Tienda Tienda ."
-        "Comp Comp ."
-        "Footer Footer .";
-}
-
-.Header {
-    grid-area: Header;
-}
-
-.Nav {
-    grid-area: Nav;
-}
-
-.Tienda {
-    grid-area: Tienda;
-}
-
-.Comp {
-    grid-area: Comp;
-}
-
-.Footer {
-    grid-area: Footer;
-}
-
-/*Contacto*/
-.containerCo {
-    display: grid;
-    grid-template-columns: 50% 50% 50%;
-    grid-template-rows: 20% 60% 20%;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-        "Nav Nav ."
-        "Form Form ."
-        "Footer Footer .";
-}
-
-.Form {
-    grid-area: Form;
-}
-
-.Footer {
-    grid-area: Footer;
-}
-
-.Nav {
-    grid-area: Nav;
-}
-
-/*Galeria*/
-.containerGa {
-    display: grid;
-    grid-template-columns: 50% 50% 50%;
-    grid-template-rows: 20% 70% 20%;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-        "Nav Nav ."
-        "Galeria Galeria ."
-        "Footer Footer .";
-}
-
-.Footer {
-    grid-area: Footer;
-}
-
-.Nav {
-    grid-area: Nav;
-}
-
-.Galeria {
-    grid-area: Galeria;
-}
-
-/*Tips*/
-.acontainer {
-    display: grid;
-    grid-template-columns: 50% 50% 50%;
-    grid-template-rows: 20% 70% 20%;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-        "Nav Nav ."
-        "Tips Tips ."
-        "Footer Footer .";
-}
-
-.Footer {
-    grid-area: Footer;
-}
-
-.Nav {
-    grid-area: Nav;
-}
-
-.Tips {
-    grid-area: Tips;
-}
-
-/*Comunidad*/
-.gridContainer {
-    max-width: 1000px;
-    padding: 1rem;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 250px);
-    gap: 1rem;
-}
-
-.item-a {
-    grid-row: 1/3;
-}
-
-.item-b {
-    grid-column: 3 /span 2;
-}
-
-.item-d {
-    grid-column: 2/5;
-}
-
-.item-e {
-    grid-area: 3/1/4/2;
-}
-
-.item-f {
-    grid-area: 1/2/2/3;
-}
-
-img {
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    object-fit: cover;
-}
-
-div {
-    position: relative;
-}
-
-.icons {
-    width: 100%;
-    position: absolute;
-    bottom:15px;
-    display:flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.icons i,
-.icons span {
-    color:white;
-    font-size:20px;
-    line-height: 10px;
-}
-
-.icons span{
-    font-size:16px;
-}
-
 /*Responsive*/
-@media and (max-width: 768px; ) {
+@include desktop {
+    display: inline-block;
+
+
+    /*Footer*/
+    .foot {
+        display: grid;
+        grid-template-columns: 50% 50% 50%;
+        grid-template-rows: 20% 5%;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "Ubicación Redes Contacto"
+            "Copyright Copyright Copyright";
+    }
+
+    .Ubicación {
+        grid-area: Ubicación;
+    }
+
+    .Redes {
+        grid-area: Redes;
+    }
+
+    .Contacto {
+        grid-area: Contacto;
+    }
+
+    .Copyright {
+        grid-area: Copyright;
+    }
+
+
+    footer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: fit-content;
+        width: 100% display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column background-color: #000;
+        color: white;
+    }
+
+    .copyright-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-top: 1px solid #302
+    }
+
+    .copyright {
+        font-size: 12px;
+        opacity: 0.7;
+        font-weight: 400;
+        padding: 10px 0;
+    }
+
+    .footer-menus {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40%;
+    }
+
+    .footer-container {
+        height: fit-content;
+        width: 100%;
+        padding: 3rem 6rem;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .footer-content-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    footer .website-logo {
+        margin-bottom: 1.2rem;
+        font-size: calc(1vw + 20px);
+    }
+
+    .footer-info,
+    .menu-item-footer {
+        margin-bottom: 0.2rem 0;
+        opacity: 0.7;
+        color: white;
+        text-decoration: none transition: 0.5s;
+    }
+
+    .menu-item-footer:hover {
+        opacity: 1;
+    }
+
+    .menu-title {
+        font-size: 16px;
+        font-weight: 400;
+        text-transform: uppercase;
+        margin-bottom: 1.2rem;
+    }
+
+    .social-container {
+        display: flex;
+        justify-content: center;
+        align-items: center: height: 30px;
+        width: 100%;
+    }
+
+    .social-linkf {
+        height: 100%;
+        width: 30px;
+        background-image: ur1(FacebdokBlanco.png). background-size:70%;
+        background-position: center;
+        margin-right: 1rem;
+        background-repeat: no-repeat;
+    }
+
+    .social-link:hover {
+        opacity: 0.7;
+    }
+
+    footer .social-link:nth-of-type(2) {
+        background-image: url(TwitterBlanco.png);
+    }
+
+    footer .social-link:nth-of-type(3) {
+        background-image: urf(Linkedinelanco.png);
+    }
+
+    @media (max-width: 768px) .footer-container {
+        padding: 2rem;
+        flex-direction: column;
+    }
+
+    .footer-content-container {
+        width: 100%;
+        padding: 2rem 0;
+        border-bottom: 1px solid #2a2a2a;
+        justify-coptent: center;
+        align-items: center:
+    }
+
+    .footer-content-container:nth-of-type(1) {
+        align-items: flex-start;
+    }
+
+    .footer-content-container:nth-of-type(3) {
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+
+    .footer-menus {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        border-bottom: 1px solid #2a2a2a;
+    }
+
+    .footer-menus .footer-content-container:nth-of-type(1) {
+        width: 45% align-items: flex-start;
+        border-bottom: none;
+    }
+
+    .footer-menus .footer-content-container:nth-of-type(2) {
+        width: 45%;
+        align-items: flex-start;
+        border-bottom: none;
+    }
+
+    /*2.0 F*/
+    footer {
+        width: 100%;
+        padding: 50px 0px;
+        background-image: url(../Images/background-footer.svg);
+        background-size: cover;
+
+        /*background-color: #d0f0f8;
+            -webkit-mask-image: url("../Images/background-footer.svg");
+            mask-image: url("../Images/background-footer.svg");
+            -webkit-mask-size: cover;
+            mask-size: cover;*/
+    }
+
+    .container__footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: auto;
+        margin-top: 100px;
+    }
+
+    .box__footer {
+        display: flex;
+        flex-direction: column;
+        padding: 40px;
+    }
+
+    .box__footer .logo img {
+        width: 180px;
+    }
+
+    .box__footer .terms {
+        max-width: 350px;
+        margin-top: 20px;
+        font-weight: 500;
+        color: #7a7a7a;
+        font-size: 18px;
+    }
+
+    .box__footer h2 {
+        margin-bottom: 30px;
+        color: #343434;
+        font-weight: 700;
+    }
+
+    .box__footer a {
+        margin-top: 10px;
+        color: #7a7a7a;
+        font-weight: 600;
+    }
+
+    .box__footer a:hover {
+        opacity: 0.8;
+    }
+
+    .box__footer a .fab {
+        font-size: 20px;
+    }
+
+    .box__copyright {
+        max-width: 1200px;
+        margin: auto;
+        text-align: center;
+        padding: 0px 40px;
+    }
+
+    .box__copyright p {
+        margin-top: 20px;
+        color: #7a7a7a;
+    }
+
+    .box__copyright hr {
+        border: none;
+        height: 1px;
+        background-color: #7a7a7a;
+    }
+
+    /*index*/
     .container {
+        display: grid;
+        grid-template-columns: 10% 10% 10%;
+        grid-template-rows: 20% 40% 20% 20%;
+        gap: 0px 0px;
+        grid-auto-flow: row;
         grid-template-areas:
             "Nav Nav Nav"
-            "Back-image Back-image Wave"
+            "Back-image Back-image Back-image"
+            "Wave Wave Wave"
             "Footer Footer Footer";
     }
-}
+
+    .Nav {
+        grid-area: Nav;
+    }
+
+    .Back-image {
+        grid-area: Back-image;
+    }
+
+    .Footer {
+        grid-area: Footer;
+    }
+
+    /*Inicio*/
+
+    .containerIn {
+        display: grid;
+        grid-template-columns: 50% 50% 50%;
+        grid-template-rows: 20% 20% 20% 20% 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "Header Header ."
+            "Nav Nav ."
+            "Nos Nos ."
+            "Wel Prod ."
+            "Footer Footer .";
+    }
+
+    .Header {
+        grid-area: Header;
+    }
+
+    .Nav {
+        grid-area: Nav;
+    }
+
+    .Nos {
+        grid-area: Nos;
+    }
+
+    .Wel {
+        grid-area: Wel;
+    }
+
+    .Prod {
+        grid-area: Prod;
+    }
+
+    .Footer {
+        grid-area: Footer;
+    }
+
+    /*Tienda*/
+    .containerTi {
+        display: grid;
+        grid-template-columns: 50% 50% 50%;
+        grid-template-rows: 20% 20% 70% 20% 20%;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "Header Header ."
+            "Nav Nav ."
+            "Tienda Tienda ."
+            "Comp Comp ."
+            "Footer Footer .";
+    }
+
+    .Header {
+        grid-area: Header;
+    }
+
+    .Nav {
+        grid-area: Nav;
+    }
+
+    .Tienda {
+        grid-area: Tienda;
+    }
+
+    .Comp {
+        grid-area: Comp;
+    }
+
+    .Footer {
+        grid-area: Footer;
+    }
+
+    /*Contacto*/
+    .containerCo {
+        display: grid;
+        grid-template-columns: 50% 50% 50%;
+        grid-template-rows: 20% 60% 20%;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "Nav Nav ."
+            "Form Form ."
+            "Footer Footer .";
+    }
+
+    .Form {
+        grid-area: Form;
+    }
+
+    .Footer {
+        grid-area: Footer;
+    }
+
+    .Nav {
+        grid-area: Nav;
+    }
+
+    /*Galeria*/
+    .containerGa {
+        display: grid;
+        grid-template-columns: 50% 50% 50%;
+        grid-template-rows: 20% 70% 20%;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "Nav Nav ."
+            "Galeria Galeria ."
+            "Footer Footer .";
+    }
+
+    .Footer {
+        grid-area: Footer;
+    }
+
+    .Nav {
+        grid-area: Nav;
+    }
+
+    .Galeria {
+        grid-area: Galeria;
+    }
+
+    /*Tips*/
+    .containerTp {
+        display: grid;
+        grid-template-columns: 50% 50% 50%;
+        grid-template-rows: 20% 70% 20%;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "Nav Nav ."
+            "Tips Tips ."
+            "Footer Footer .";
+    }
+
+    .Nav {
+        grid-area: Nav;
+    }
+
+    .Tips {
+        grid-area: Tips;
+    }
+
+    .Footer {
+        grid-area: Footer;
+    }
