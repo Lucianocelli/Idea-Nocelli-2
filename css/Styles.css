@@ -17,6 +17,10 @@
     right: 30px;
 }
 
+@include desktop{
+    display:inline-block;
+
+    
 /*index*/
 .container {
     display: grid;
@@ -325,7 +329,7 @@ p {
 }
 
 /*Tienda*/
-.containerIn {
+.containerTi {
     display: grid;
     grid-template-columns: 50% 50% 50%;
     grid-template-rows: 20% 20% 70% 20% 20%;
@@ -360,23 +364,141 @@ p {
 }
 
 /*Contacto*/
-.containerIn {  display: grid;
+.containerCo {
+    display: grid;
     grid-template-columns: 50% 50% 50%;
     grid-template-rows: 20% 60% 20%;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-      "Nav Nav ."
-      "Form Form ."
-      "Footer Footer .";
-  }
-  
-  .Form { grid-area: Form; }
-  
-  .Footer { grid-area: Footer; }
-  
-  .Nav { grid-area: Nav; }
-  
+        "Nav Nav ."
+        "Form Form ."
+        "Footer Footer .";
+}
+
+.Form {
+    grid-area: Form;
+}
+
+.Footer {
+    grid-area: Footer;
+}
+
+.Nav {
+    grid-area: Nav;
+}
+
+/*Galeria*/
+.containerGa {
+    display: grid;
+    grid-template-columns: 50% 50% 50%;
+    grid-template-rows: 20% 70% 20%;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "Nav Nav ."
+        "Galeria Galeria ."
+        "Footer Footer .";
+}
+
+.Footer {
+    grid-area: Footer;
+}
+
+.Nav {
+    grid-area: Nav;
+}
+
+.Galeria {
+    grid-area: Galeria;
+}
+
+/*Tips*/
+.acontainer {
+    display: grid;
+    grid-template-columns: 50% 50% 50%;
+    grid-template-rows: 20% 70% 20%;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "Nav Nav ."
+        "Tips Tips ."
+        "Footer Footer .";
+}
+
+.Footer {
+    grid-area: Footer;
+}
+
+.Nav {
+    grid-area: Nav;
+}
+
+.Tips {
+    grid-area: Tips;
+}
+
+/*Comunidad*/
+.gridContainer {
+    max-width: 1000px;
+    padding: 1rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 250px);
+    gap: 1rem;
+}
+
+.item-a {
+    grid-row: 1/3;
+}
+
+.item-b {
+    grid-column: 3 /span 2;
+}
+
+.item-d {
+    grid-column: 2/5;
+}
+
+.item-e {
+    grid-area: 3/1/4/2;
+}
+
+.item-f {
+    grid-area: 1/2/2/3;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+div {
+    position: relative;
+}
+
+.icons {
+    width: 100%;
+    position: absolute;
+    bottom:15px;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.icons i,
+.icons span {
+    color:white;
+    font-size:20px;
+    line-height: 10px;
+}
+
+.icons span{
+    font-size:16px;
+}
 
 /*Responsive*/
 @media and (max-width: 768px; ) {
