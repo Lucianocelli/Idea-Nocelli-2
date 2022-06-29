@@ -39,36 +39,73 @@
 .Back-image {
     grid-area: Back-image;
 }
-#hero{
+
+#hero {
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     flex-direction: column;
     height: 90vh;
-    background-image: linear-gradient(
-        0deg,
-        #d7d4d447,
-        rgba(242, 237, 237, 0)
-    )
-    ,url("../img/Portada\ con\ transp.jpg");
+    background-image: linear-gradient(0deg,
+            #d7d4d447,
+            rgba(242, 237, 237, 0)), url("../img/Portada\ con\ transp.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
 }
-#hero h1{
-    color: rgb(117, 117, 117);
+
+#hero h1 {
+    color: hsla(30, 2%, 25%, 0.716);
 }
 
-#hero button{
+#hero button {
     font-size: 1.75em;
 }
 
 .Footer {
     grid-area: Footer;
 }
-.border-footer{
-    background-color: #3e3e3e88;
+
+.foot {
+    display: grid;
+    grid-template-columns: 20% 30% 50%;
+    grid-template-rows: 10% 5%;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "Redes Contacto Ubicacion"
+}
+
+.Redes {
+    grid-area: Redes;
+}
+
+.Contacto {
+    grid-area: Contacto;
+}
+
+.Ubicacion {
+    grid-area: Ubicacion;
+}
+
+.border-footer {
+    background-color: #D9D3D2;
+}
+
+footer p {
+    margin: 0;
+    color: rgb(100, 100, 100);
+}
+
+footer .container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.Copyright{
+text-align: center;
 }
 
 /*Inicio*/
@@ -122,7 +159,7 @@
     grid-area: Footer;
 }
 
-.Redes{
+.Redes {
     text-decoration: none;
 }
 
@@ -234,4 +271,10 @@
 
 .Footer {
     grid-area: Footer;
+}
+
+@media (min-width: 850px) {
+    footer .container {
+        justify-content: flex-end;
+    }
 }
