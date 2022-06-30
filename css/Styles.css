@@ -41,14 +41,17 @@
     height: 90vh;
     background-image: linear-gradient(0deg,
             #d7d4d447,
-            rgba(242, 237, 237, 0)), url("../img/Portada\ con\ transp.jpg");
+            rgba(242, 237, 237, 0)), url("../img/22fin.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
 }
 
 #hero h1 {
-    color: hsla(30, 2%, 25%, 0.716);
+    font-size: x-large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: hsla(8, 57%, 17%, 0.716);
+    text-decoration: overline;
 }
 
 #hero button {
@@ -87,7 +90,7 @@
 
 footer p {
     margin: 0;
-    color: rgb(100, 100, 100);
+    color: rgb(85, 85, 85);
 }
 
 footer .container {
@@ -96,8 +99,41 @@ footer .container {
     align-items: flex-end;
 }
 
-.Copyright{
-text-align: center;
+footer .TexF{
+    color: rgb(255, 255, 255);
+}
+footer a {
+    text-decoration: none;
+    color: rgb(85, 85, 85);
+    align-items: center;
+    list-style: none;
+    list-style: none;
+}
+
+.Copyright {
+    text-align: center;
+}
+
+@media (min-width: 750px) {
+    header .Back-image {
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container .Back-image {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav .Back-image {
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #hero h1 .Back-image {
+        font-size: 5em;
+    }
 }
 
 /*Inicio*/
@@ -126,6 +162,14 @@ text-align: center;
     display: flex
 }
 
+.Header-carru {
+    flex-direction: row;
+    padding-bottom: 0;
+    padding-right: 20px;
+    justify-content: center;
+    width: 100%;
+}
+
 .containerIn {
     flex-direction: column;
     align-items: center
@@ -139,12 +183,86 @@ text-align: center;
     grid-area: Nos;
 }
 
+.title {
+    text-align: center;
+    text-decoration: overline;
+    text-transform: uppercase;
+    text-decoration-color: rgb(127, 117, 106);
+    color: rgb(127, 117, 106);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: xx-large;
+}
+
+.title2 {
+    text-align: center;
+    text-decoration: overline;
+    text-transform: uppercase;
+    text-decoration-color: rgb(127, 117, 106);
+    color: rgb(127, 117, 106);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+}
+
+.textL {
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    color: rgb(198, 198, 198);
+}
+
+.Vidio {
+    width: 5%;
+    border-radius: 500px;
+    height: 10%;
+}
+
+.Image {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-radius: 100px;
+}
+
+.Image-2 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
 .Wel {
     grid-area: Wel;
 }
 
+.Vid {
+    display: grid;
+    grid-template-columns: 50% 13.1% 86.9%;
+    grid-template-rows: 20% 50%;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "Texto Texto Video"
+        "Texto Texto Video";
+}
+
+.Texto {
+    grid-area: Texto;
+}
+
+.Video {
+    grid-area: Video;
+}
+
 .Prod {
     grid-area: Prod;
+}
+
+.comparacion{
+    justify-items: center;
+    align-items: center;
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    color: rgb(198, 198, 198);
 }
 
 .Footer {
