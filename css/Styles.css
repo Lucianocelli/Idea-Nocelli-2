@@ -99,9 +99,10 @@ footer .container {
     align-items: flex-end;
 }
 
-footer .TexF{
+footer .TexF {
     color: rgb(255, 255, 255);
 }
+
 footer a {
     text-decoration: none;
     color: rgb(85, 85, 85);
@@ -256,7 +257,7 @@ footer a {
     grid-area: Prod;
 }
 
-.comparacion{
+.comparacion {
     justify-items: center;
     align-items: center;
     font-size: large;
@@ -299,6 +300,57 @@ footer a {
 .Tienda {
     grid-area: Tienda;
 }
+
+section {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 50px 0;
+}
+
+section h2 {
+    width: 100%;
+    color: #999;
+    font-family: monospace;
+}
+
+.card {
+    width: 33.333333%;
+}
+
+.estilo-a {
+    font-family: sans-serif;
+}
+
+.estilo-a a {
+    text-decoration: none;
+    color: black;
+}
+
+.estilo-a a:hover {
+    text-decoration: underline;
+}
+
+.estilo-a .img-container {
+    overflow: hidden;
+    height: 400px;
+    position: relative;
+}
+
+.estilo-a .img-container img {
+    width: 100%;
+    position: absolute;
+    top: -25%;
+    transition: all 0.5s;
+}
+
+.estilo-a:hover .img-container img {
+    transform: scale(1.2);
+}
+
+
+
 
 .Comp {
     grid-area: Comp;
