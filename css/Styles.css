@@ -275,6 +275,7 @@ footer a {
 }
 
 /*Tienda*/
+
 .containerTi {
     display: grid;
     grid-template-columns: 50% 50% 50%;
@@ -304,28 +305,18 @@ footer a {
 section {
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
     padding: 50px 0;
 }
 
-section h2 {
-    width: 100%;
-    color: #999;
-    font-family: monospace;
-}
-
 .card {
-    width: 33.333333%;
-}
-
-.estilo-a {
-    font-family: sans-serif;
+    width: 33%;
 }
 
 .estilo-a a {
     text-decoration: none;
-    color: black;
+    color: rgb(100, 100, 100);
 }
 
 .estilo-a a:hover {
@@ -336,6 +327,14 @@ section h2 {
     overflow: hidden;
     height: 400px;
     position: relative;
+    border-radius: 15px;
+}
+
+.estilo-a .img-container {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
 }
 
 .estilo-a .img-container img {
@@ -349,8 +348,28 @@ section h2 {
     transform: scale(1.2);
 }
 
+.estilo-a .info-container {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+}
 
+.estilo-a .info-container h3 {
+    margin: 0;
+}
 
+.estilo-a .info-container h3,
+.estilo-a .info-container strong,
+.estilo-a .info-container span {
+    padding: 5px 15px;
+    width: 100%;
+}
+
+.card-footer {
+    text-align: center;
+    justify-content: center;
+}
 
 .Comp {
     grid-area: Comp;
@@ -361,6 +380,7 @@ section h2 {
 }
 
 /*Contacto*/
+
 .containerCo {
     display: grid;
     grid-template-columns: 50% 50% 50%;
@@ -386,6 +406,7 @@ section h2 {
 }
 
 /*Galeria*/
+
 .containerGa {
     display: grid;
     grid-template-columns: 50% 50% 50%;
@@ -410,7 +431,73 @@ section h2 {
     grid-area: Galeria;
 }
 
+.estilo-b {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.estilo-b .img-container {
+    overflow: hidden;
+    position: relative;
+}
+
+.estilo-b .img-container img {
+    width: 100%;
+}
+
+.estilo-b .img-container .promo {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    font-size: 20px;
+    background: white;
+    padding: 15px;
+    color: black;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.estilo-b .img-container .favorite {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: white;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+}
+
+.estilo-b .img-container .favorite svg {
+    transform: translatey(14px);
+}
+
+.estilo-b .img-container .favorite:hover {
+    background: rgb(147, 145, 145);
+}
+
+.estilo-b .img-container .favorite:hover svg {
+    fill: white;
+}
+
+.estilo-b a {
+    display: inline-block;
+    margin-top: 2px;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 15px;
+    border: 1px solid black;
+}
+
+.estilo-b a:hover {
+    color: black;
+    background-color: transparent;
+    border: 1px solid black;
+}
+
 /*Tips*/
+
 .containerTp {
     display: grid;
     grid-template-columns: 50% 50% 50%;
@@ -439,4 +526,79 @@ section h2 {
     footer .container {
         justify-content: flex-end;
     }
+}
+
+/*Fotos*/
+
+.containerFo {
+    display: grid;
+    grid-template-columns: 50% 50% 50%;
+    grid-template-rows: 20% 70% 20%;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "Nav Nav ."
+        "Fotos  Fotos ."
+        "Footer Footer .";
+}
+
+.Nav {
+    grid-area: Nav;
+}
+
+.Fotos {
+    grid-area: Galeria;
+}
+
+section {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 50px 0;
+}
+
+section h2 {
+    width: 100%;
+    color: #999;
+    font-family: monospace;
+}
+
+.card {
+    width: 33.333333%;
+}
+
+/* Estilo A */
+.estilo-c {
+    font-family: sans-serif;
+}
+
+.estilo-c a {
+    text-decoration: none;
+    color: black;
+}
+
+.estilo-c a:hover {
+    text-decoration: underline;
+}
+
+.estilo-c .img-container {
+    overflow: hidden;
+    height: 400px;
+    position: relative;
+}
+
+.estilo-c .img-container img {
+    width: 100%;
+    position: absolute;
+    top: -25%;
+    transition: all 0.5s;
+}
+
+.estilo-c:hover .img-container img {
+    transform: scale(1.2);
+}
+
+.Footer {
+    grid-area: Footer;
 }
