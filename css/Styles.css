@@ -41,7 +41,7 @@
     height: 90vh;
     background-image: linear-gradient(0deg,
             #d7d4d447,
-            rgba(242, 237, 237, 0)), url("../img/22fin.jpg");
+            rgba(242, 237, 237, 0)), url("../img/P22.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -50,7 +50,7 @@
 #hero h1 {
     font-size: x-large;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: hsla(8, 57%, 17%, 0.716);
+    color: hsla(0, 0%, 4%, 0.716);
     text-decoration: overline;
 }
 
