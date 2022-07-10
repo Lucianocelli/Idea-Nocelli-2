@@ -282,6 +282,11 @@ footer a:hover {
     grid-area: Prod;
 }
 
+.text-marg{
+    margin: 50px;
+    padding: 20px;
+}
+
 .Footer {
     grid-area: Footer;
 }
