@@ -1,21 +1,41 @@
-
-:root{
+:root {
 
     /* Paleta de colores */
-    --negro         : #403D3C;
-    --blanco        : #F2EBEB;
+    $negro: #403D3C;
+    $blanco: #F2EBEB;
 
-    --rojo          : #A64C44;
-    --rojoO         : #70342e;
+    $rojo: #A64C44;
+    $rojo-1: #70342e;
 
-    --rosa          : #D9AFA0;
-    --rosado        : #D99696;
-    --celeste       : #97A69C;
-    --azul          : #365359;
+    $rosa: #D9AFA0;
+    $rosa-do: #D99696;
+    $celeste: #97A69C;
+    $azul: #365359;
 
-    --gris          : #BFBBBA;
-    --grisaceo      : #8C8988;
+    $gris: #BFBBBA;
+    $gris-aceo: #8C8988;
 
     /* Tipografía */
-    --tipo-principal  : Verdana, Geneva, Tahoma, sans-serif;
+    $tipo-p: Verdana, Geneva, Tahoma, sans-serif;
+
+    $font-p: 1.8rem;
+    $font-h1: 3.0rem;
+    $font-h2: 2.4rem;
+    $font-h3: 2.0rem;
+
+    /* Botones */
+    .btn{
+        border: none;
+        border-radius:2px;
+        padding: 0.7em 1.5em;
+        cursor: pointer;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        font-size:1.5rem;
+        font-weight: 500;
+        transition: transform 100ms;
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
 }
