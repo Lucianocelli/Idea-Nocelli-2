@@ -28,6 +28,10 @@ let stockProductoB = 50
 let cantidadCompras = prompt("Ingrese la cantidad de productos distintos que quiere comprar: \n- Shampoo\n- Crema")
 let precioTotal = 0;
 
+function sumaTarjeta (precio){
+    return precio * 0.50 
+}
+
 for(let i = 0; i < cantidadCompras; i++){
 
     let compra1 = prompt("Ingrese el nombre del producto que quiere comprer: \n- Shampoo\n- Crema")
@@ -55,6 +59,7 @@ for(let i = 0; i < cantidadCompras; i++){
         alert("No tenemos ese producto")
     }
 }
+
 if(cantidadCompras > 1){
     alert("Este es el precio total de tu compra:" + precioTotal)
 }
