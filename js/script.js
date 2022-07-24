@@ -1,3 +1,8 @@
+function saludar() {
+    console.log ("Bienvenidos al cambio");
+}
+saludar()
+
 //Calcular costos totales de la compra realizada por el usuario//
 
 for(let i = 1 ; i <= 2 ; i ++){
@@ -54,4 +59,14 @@ if(cantidadCompras > 1){
     alert("Este es el precio total de tu compra:" + precioTotal)
 }
 
+function calculadora (primerNumero, segundoNumero, operacion) {
+    switch (operacion) {
+        case "+":
+            return primerNumero + segundoNumero; break;
+        case "*":
+                return primerNumero * segundoNumero; break;
+        default:
+            return 0; break;
+    }
+}
 
