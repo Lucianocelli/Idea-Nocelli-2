@@ -1,17 +1,139 @@
+//Saludos de bienvenida//
+alert('BIENVEDNIDX AL CAMBIO (presione F12 para abrir la consola y cerrar para visualizar nuestra pagina)');
+
 function saludar() {
-    console.log ("Bienvenidos al cambio");
+    console.log("Bienvenidos al cambio");
 }
 saludar()
 
-//Calcular costos totales de la compra realizada por el usuario//
+function saludoDirecto() {
+    let nombreIngresado = prompt('Ingresa su nombre:)');
+    alert("Bienvenidx " + nombreIngresado + "." + " Continua para realizar tu compra")
+}
 
-for(let i = 1 ; i <= 2 ; i ++){
+//Definir tarea a realizar//
+let codigo = 0
+
+function cod () {
+    codigo = parseInt (prompt ('Ingrese el numero del area que te interesa: 1.Higiene personal  2.Belleza facial 3.Cuidado del cabello 0.Salir'));
+    switch (codigo) {
+        case 1:
+            clasificacionProductoA;
+            alert('En la consola te detallamos los productos nuevos disponibles. Presione 0 para salir de las instrucciones por favor');
+            break;
+        case 2:
+            let nuevoCodigo = 0
+            do {
+                nuevoCodigo = prompt ('Ingrese la letra correspondiente: A.Exfoliante natural de arcilla verde B.Pulpa de carbon C.Agua de rosas');
+                if ((nuevoCodigo == "A")||(nuevoCodigo == "a")) {
+                    clasificacionProductoA;
+                } else if ((nuevoCodigo == "B")||(nuevoCodigo == "b")) {
+                    clasificacionProductoB;
+                } else if ((nuevoCodigo == "C")||(nuevoCodigo == "c")) {
+                    clasificacionProductoC;
+                }
+            } while ((nuevoCodigo != "A")&&(nuevoCodigo != "a")&&(nuevoCodigo != "B")&&(nuevoCodigo != "b")&&(nuevoCodigo != "C")&&(nuevoCodigo != "c"))
+            alert('En la consola te detallamos los productos disponibles de este filtro. Presione 0 para salir de las instrucciones por favor');
+            break;
+        case 3:
+            let nuevoCodigoB = 0
+            do {
+                nuevoCodigoB = prompt ('Ingrese la letra correspondiente: A.Shampoo solido B.Acondicionador solido C.Desenrredante natural');
+                if ((nuevoCodigoB == "A")||(nuevoCodigoB == "a")) {
+                    clasificacionProductoA;
+                } else if ((nuevoCodigoB == "B")||(nuevoCodigoB == "b")) {
+                    clasificacionProductoB;
+                } else if ((nuevoCodigoB == "C")||(nuevoCodigoB == "c")) {
+                    clasificacionProductoC;
+                }
+            } while ((nuevoCodigoB != "A")&&(nuevoCodigoB != "a")&&(nuevoCodigoB != "B")&&(nuevoCodigoB != "b")&&(nuevoCodigoB != "C")&&(nuevoCodigoB != "c"))
+            alert('En la consola te detallamos los productos disponibles de este filtro. Presione 0 para salir de las instrucciones por favor');
+            break;
+        default:
+            break;
+    }
+}
+
+do { 
+    cod(); 
+} while (codigo !=0);
+
+//1.a Calcular costos totales de la compra realizada por el usuario//
+cod() 
+
+class Higiene { 
+    constructor(marca,color,estilo) {
+        this.marca = marca,
+        this.color = color,
+        this.tipo = tipo,
+        this.precio = parseInt(Math.random()*10) //Math.random genera un numero entre 0 y 1
+    }
+    mostrarProducto() { 
+        return ('Del producto '+this.tipo+' tenemos de la marca '+this.marca+' en color '+this.color+' y el precio es: '+this.precio);
+    }
+    mostrarProducto() { 
+        return ('Del producto '+this.tipo+' tenemos de la marca '+this.marca+' en color '+this.color+' y el precio es: '+this.precio);
+    }
+}
+
+class facial {
+    constructor(marca,color,tipo) {
+        this.marca = marca,
+        this.color = color,
+        this.tipo = tipo,
+        this.precio = parseInt(Math.random()*10) 
+    }
+    mostrarProducto() { 
+        return ('Del producto '+this.tipo+' tenemos de la marca '+this.marca+' en color '+this.color+' y el precio es: '+this.precio);
+    }
+}
+
+class cabello {
+    constructor(marca,color,tipo) {
+        this.marca = marca,
+        this.color = color,
+        this.tipo = tipo,
+        this.precio = parseInt(Math.random()*10) 
+    }
+    mostrarProducto() { 
+        return ('Del producto '+this.tipo+' tenemos de la marca '+this.marca+' en color '+this.color+' y el precio es: '+this.precio);
+    }
+}
+
+let Producto = [ 
+    new Produto ('Kamikaze','Blanco',Crema), 
+    new Produto ('Meraki','Azul',Cepillo),
+    new Produto ('Maggakup','Trasparente',Copita),
+    new Produto ('Kamikaze','Rosa',Arcilla),
+    new Produto ('Nodo','Blanco',Desodorante),
+    new Produto ('Ecopcion','Blanco',Bolsas),
+    new Produto ('Maggakup','Textura',Toallitas),
+    new Produto ('Kamikaze','Trasparente',Aceite),
+    new Produto ('Ecopcion','Gris',Sorbete),
+    new Produto ('Meraki','Marron',Estuche),
+    new Produto ('Nodo','Naranja',Bronceador),
+    new Produto ('Kalu','negro',Jalea),
+    new Produto ('Nodo','Verde',Pads)
+];
+
+
+function clasificacionProducto(cod) { 
+    for (let cod of Higiene) { 
+        if (Higiene.Producto == cod) { 
+            Higiene.mostrarProducto(); 
+            console.log(Higiene)
+        }
+    }
+}
+
+
+//1.b Calcular costos totales de la compra realizada por el usuario//
+
+for (let i = 1; i <= 2; i++) {
     console.log(i)
-    if(i == 2) {
+    if (i == 2) {
         alert("Apurate, esta es nuestra ultima venta")
     }
-    let nombreIngresado = prompt("Ingresa su nombre:")
-    alert("Bienvenido " + nombreIngresado + "." + " Continua para realizar tu compra")
 }
 
 alert("Nose quedamos sin stock por hoy")
@@ -28,50 +150,49 @@ let stockProductoB = 50
 let cantidadCompras = prompt("Ingrese la cantidad de productos distintos que quiere comprar: \n- Shampoo\n- Crema")
 let precioTotal = 0;
 
-function sumaTarjeta (precio){
-    return precio * 0.50 
+function sumaTarjeta(precio) {
+    return precio * 0.50
 }
 
-for(let i = 0; i < cantidadCompras; i++){
+for (let i = 0; i < cantidadCompras; i++) {
 
     let compra1 = prompt("Ingrese el nombre del producto que quiere comprer: \n- Shampoo\n- Crema")
     let cantidad1 = prompt("Ingrese la cantidad de unidades que quiera comprar")
 
     if (compra1 == "Shampoo") {
-        if(stockProductoB >= cantidad1){
+        if (stockProductoB >= cantidad1) {
             precioTotal += cantidad1 * precioproductoB
             alert("El precio total es de: $" + (cantidad1 * precioproductoB))
-        }
-        else {
-        alert("No disponemos de esa cantidad en stock actualmente. Nuestro stock actual es de: " + stockProductoB + "unidades")
+        } else {
+            alert("No disponemos de esa cantidad en stock actualmente. Nuestro stock actual es de: " + stockProductoB + "unidades")
         }
     } else if (compra1 == "Crema") {
-        if(stockProductoA >= cantidad1){
+        if (stockProductoA >= cantidad1) {
             precioTotal += cantidad1 * precioProductoA
             alert("El precio total es de: $" + (cantidad1 * precioProductoA))
-        }
-        else {
+        } else {
             alert("No disponemos de esa cantidad en stock actualmente. Nuestro stock actual es de: " + stockProductoA + "unidades")
-            }
-        
-    } 
-    else {
+        }
+
+    } else {
         alert("No tenemos ese producto")
     }
 }
 
-if(cantidadCompras > 1){
+if (cantidadCompras > 1) {
     alert("Este es el precio total de tu compra:" + precioTotal)
 }
 
-function calculadora (primerNumero, segundoNumero, operacion) {
+function calculadora(primerNumero, segundoNumero, operacion) {
     switch (operacion) {
         case "+":
-            return primerNumero + segundoNumero; break;
+            return primerNumero + segundoNumero;
+            break;
         case "*":
-                return primerNumero * segundoNumero; break;
+            return primerNumero * segundoNumero;
+            break;
         default:
-            return 0; break;
+            return 0;
+            break;
     }
 }
-
