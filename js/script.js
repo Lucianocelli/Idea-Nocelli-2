@@ -66,7 +66,10 @@ class Higiene {
         this.marca = marca,
             this.color = color,
             this.tipo = tipo,
-            this.precio = parseInt(Math.random() * 10) //Math.random genera un numero entre 0 y 1
+            this.precio = parseInt(Math.random() * 10)
+            this.sumaTarjeta = function sumaTarjeta(precio) {
+                return precio * 0.50
+            }
     }
     mostrarProducto() {
         return ('Del producto ' + this.tipo + ' tenemos de la marca ' + this.marca + ' en color ' + this.color + ' y el precio es: ' + this.precio);
@@ -82,6 +85,9 @@ class facial {
             this.color = color,
             this.tipo = tipo,
             this.precio = parseInt(Math.random() * 10)
+            this.sumaTarjeta = function sumaTarjeta(precio) {
+                return precio * 0.50
+            }
     }
     mostrarProducto() {
         return ('Del producto ' + this.tipo + ' tenemos de la marca ' + this.marca + ' en color ' + this.color + ' y el precio es: ' + this.precio);
@@ -94,11 +100,15 @@ class cabello {
             this.color = color,
             this.tipo = tipo,
             this.precio = parseInt(Math.random() * 10)
+            this.sumaTarjeta = function sumaTarjeta(precio) {
+                return precio * 0.50
+            }
     }
     mostrarProducto() {
         return ('Del producto ' + this.tipo + ' tenemos de la marca ' + this.marca + ' en color ' + this.color + ' y el precio es: ' + this.precio);
     }
 }
+
 
 let Producto = [
     new Produto('Kamikaze', 'Blanco', Crema),
@@ -180,11 +190,23 @@ function Producto(nombre, precio, stock){
     this.nombre = nombre
     this.precio = precio
     this.stock = stock
+    this.sumaTarjeta = function sumaTarjeta(precio) {
+        return precio * 0.50
+    }
+    this.sumarStock = function (cantidad){
+        this.stock += cantidad
+    }
 }
 
 const productoD = new Producto("Pad", 500, 150)
 const productoE = new Producto("Sorbete", 350, 500)
 const productoF = new Producto("Bolsa", 1000, 50)
+
+productoD.sumaTarjeta()
+productoE.sumaTarjeta()
+productoF.sumaTarjeta()
+
+productoD.sumarStock(cantidad1)
 
 //
 
