@@ -1,12 +1,12 @@
 //Saludos de bienvenida//
 alert('BIENVEDNIDX AL CAMBIO (presione F12 para abrir la consola y cerrar para visualizar nuestra pagina)');
 
-function saludar() {
+function saludar() { //esta función esta bien para practicar, pero no es necesaria
     console.log("Bienvenidos al cambio");
 }
 saludar()
 
-function saludoDirecto() {
+function saludoDirecto() { //donde se ejecuta esta función?
     let nombreIngresado = prompt('Ingresa su nombre:)');
     alert("Bienvenidx " + nombreIngresado + "." + " Continua para realizar tu compra")
 }
@@ -18,24 +18,24 @@ function cod() {
     codigo = parseInt(prompt('Ingrese el numero del area que te interesa: 1.Higiene personal  2.Belleza facial 3.Cuidado del cabello 0.Salir'));
     switch (codigo) {
         case 1:
-            clasificacionProductoA;
-            alert('En la consola te detallamos los productos nuevos disponibles. Presione 0 para salir de las instrucciones por favor');
+            clasificacionProductoA; //donde se define? que es?
+            alert('En la consola te detallamos los productos nuevos disponibles. Presione 0 para salir de las instrucciones por favor'); //estas segura? donde llamas a ese console.log?
             break;
-        case 2:
+        case 2: //este caso está excelentemente planteado!
             let nuevoCodigo = 0
             do {
                 nuevoCodigo = prompt('Ingrese la letra correspondiente: A.Exfoliante natural de arcilla verde B.Pulpa de carbon C.Agua de rosas');
                 if ((nuevoCodigo == "A") || (nuevoCodigo == "a")) {
-                    clasificacionProductoA;
+                    clasificacionProductoA; //donde se define? que es?
                 } else if ((nuevoCodigo == "B") || (nuevoCodigo == "b")) {
-                    clasificacionProductoB;
+                    clasificacionProductoB; //donde se define? que es?
                 } else if ((nuevoCodigo == "C") || (nuevoCodigo == "c")) {
-                    clasificacionProductoC;
+                    clasificacionProductoC; //donde se define? que es?
                 }
             } while ((nuevoCodigo != "A") && (nuevoCodigo != "a") && (nuevoCodigo != "B") && (nuevoCodigo != "b") && (nuevoCodigo != "C") && (nuevoCodigo != "c"))
-            alert('En la consola te detallamos los productos disponibles de este filtro. Presione 0 para salir de las instrucciones por favor');
+            alert('En la consola te detallamos los productos disponibles de este filtro. Presione 0 para salir de las instrucciones por favor'); //estas segura? donde llamas a ese console.log?
             break;
-        case 3:
+        case 3: //mismas correcciones case 2
             let nuevoCodigoB = 0
             do {
                 nuevoCodigoB = prompt('Ingrese la letra correspondiente: A.Shampoo solido B.Acondicionador solido C.Desenrredante natural');
@@ -51,15 +51,14 @@ function cod() {
             break;
         default:
             break;
-    }
-}
+    }}
 
 do {
     cod();
 } while (codigo != 0);
 
 //1.a Calcular costos totales de la compra realizada por el usuario//
-cod()
+cod() //esto que hace???
 
 class Higiene {
     constructor(marca, color, estilo) {
@@ -74,12 +73,12 @@ class Higiene {
     mostrarProducto() {
         return ('Del producto ' + this.tipo + ' tenemos de la marca ' + this.marca + ' en color ' + this.color + ' y el precio es: ' + this.precio);
     }
-    mostrarProducto() {
+    mostrarProducto() { //esto esta repetido
         return ('Del producto ' + this.tipo + ' tenemos de la marca ' + this.marca + ' en color ' + this.color + ' y el precio es: ' + this.precio);
     }
 }
 
-class facial {
+class facial { //nombres de clases e mayusculas
     constructor(marca, color, tipo) {
         this.marca = marca,
             this.color = color,
@@ -94,7 +93,7 @@ class facial {
     }
 }
 
-class cabello {
+class cabello { //las clases higiene facial y cabello son iguales: no te conviene hacer una unica clase que se llame producto? cual seria el motivo de tener tres clases diferentes?
     constructor(marca, color, tipo) {
         this.marca = marca,
             this.color = color,
@@ -109,10 +108,11 @@ class cabello {
     }
 }
 
-
-let Producto = [
-    new Produto('Kamikaze', 'Blanco', Crema),
-    new Produto('Meraki', 'Azul', Cepillo),
+let producto = [
+//let Producto = [ //nombres de array en camelCase
+    new Producto(('Kamikaze', 'Blanco', 'Crema')), //usar el constructor correcto (Producto)
+    new Produto('Kamikaze', 'Blanco', Crema), //los textos van entre comillas
+    new Produto('Meraki', 'Azul', Cepillo), //creaste una cuarta clase Producto y no usaste las anteriores: ojo!
     new Produto('Maggakup', 'Trasparente', Copita),
     new Produto('Kamikaze', 'Rosa', Arcilla),
     new Produto('Nodo', 'Blanco', Desodorante),
@@ -127,7 +127,7 @@ let Producto = [
 ];
 
 
-function clasificacionProducto(cod) {
+function clasificacionProducto(cod) { //esto que hace? no entiendo
     for (let cod of Higiene) {
         if (Higiene.Producto == cod) {
             Higiene.mostrarProducto();
@@ -139,14 +139,15 @@ function clasificacionProducto(cod) {
 
 //1.b Calcular costos totales de la compra realizada por el usuario//
 
-for (let i = 1; i <= 2; i++) {
+for (let i = 1; i <= 2; i++) { //esto que hace? que costo calcula? como? donde lo muesrta?
     console.log(i)
     if (i == 2) {
         alert("Apurate, esta es nuestra ultima venta")
     }
 }
 
-alert("Nose quedamos sin stock por hoy")
+alert("Nose quedamos sin stock por hoy") //esto no está bien acá: donde querés que se ejecute?
+//acá solo se ejecutaria UNA VEZ: cuando el navegador lea la linea 149 (no cuando se quedó sin stock)
 
 /*let nombreProductoA = "Crema"
 let precioProductoA = 1500
@@ -158,13 +159,13 @@ let stockProductoB = 50*/
 
 //Lo mismo que arriba pero todo junto//
 
-let productoA = {
+let productoA = { //ya creaste productos con clases, esto no es necesario
     nombre: "Crema",
     precio: 1500,
     stock: 10
 }
 
-let productoB = {
+let productoB = { //ya creaste productos con clases, esto no es necesario
     nombre: "Shampoo",
     precio: 2000,
     stock: 50
@@ -174,8 +175,8 @@ console.log(productoB.nombre)
 console.log(productoB.precio)
 console.log(productoB.stock)
 
-//Otra forma//
-const productoC = {
+//Otra forma// 
+const productoC = { //creaste el producto de la misma forma
     nombre: "Copita",
     precio: 3500,
     stock: 20
@@ -186,7 +187,7 @@ console.log(productoC["precio"])
 console.log(productoC["stock"])
 
 //Otra forma//
-function Producto(nombre, precio, stock){
+function Producto(nombre, precio, stock){ //esto si es otra forma, pero la más optima es la de clases mas que la de la funcion constructora
     this.nombre = nombre
     this.precio = precio
     this.stock = stock
@@ -208,7 +209,10 @@ productoF.sumaTarjeta()
 
 productoD.sumarStock(cantidad1)
 
-//
+//esto es codigo viejo no???
+//lo que tu codigo nuevo no use: BORRALO O COMENTALO
+//ya que de lo contrario se pisan y puede traerte muchos errores
+//de hecho ahora hay muchos errores justamente por este tema y por este tema: el programa no funciona :(
 
 let cantidadCompras = prompt("Ingrese la cantidad de productos distintos que quiere comprar: \n- Shampoo\n- Crema")
 let precioTotal = 0;
