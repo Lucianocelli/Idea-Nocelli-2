@@ -1,15 +1,16 @@
 //Saludos de bienvenida//
 alert('BIENVEDNIDX AL CAMBIO (presione F12 para abrir la consola y cerrar para visualizar nuestra pagina)');
 
-function saludar() {
+/*function saludar() {
     console.log("Bienvenidos al cambio");
 }
-saludar()
+saludar()*/
 
-function saludoDirecto() {
+function saludoDirecto() { //donde se ejecuta esta función?
     let nombreIngresado = prompt('Ingresa su nombre:)');
     alert("Bienvenidx " + nombreIngresado + "." + " Continua para realizar tu compra")
 }
+
 
 //Definir tarea a realizar//
 let codigo = 0
@@ -18,24 +19,24 @@ function cod() {
     codigo = parseInt(prompt('Ingrese el numero del area que te interesa: 1.Higiene personal  2.Belleza facial 3.Cuidado del cabello 0.Salir'));
     switch (codigo) {
         case 1:
-            clasificacionProductoA;
-            alert('En la consola te detallamos los productos nuevos disponibles. Presione 0 para salir de las instrucciones por favor');
+            clasificacionProductoA; //donde se define? que es?
+            alert('En la consola te detallamos los productos nuevos disponibles. Presione 0 para salir de las instrucciones por favor'); //estas segura? donde llamas a ese console.log?
             break;
-        case 2:
+        case 2: //este caso está excelentemente planteado!
             let nuevoCodigo = 0
             do {
                 nuevoCodigo = prompt('Ingrese la letra correspondiente: A.Exfoliante natural de arcilla verde B.Pulpa de carbon C.Agua de rosas');
                 if ((nuevoCodigo == "A") || (nuevoCodigo == "a")) {
-                    clasificacionProductoA;
+                    clasificacionProductoA; //donde se define? que es?
                 } else if ((nuevoCodigo == "B") || (nuevoCodigo == "b")) {
-                    clasificacionProductoB;
+                    clasificacionProductoB; //donde se define? que es?
                 } else if ((nuevoCodigo == "C") || (nuevoCodigo == "c")) {
-                    clasificacionProductoC;
+                    clasificacionProductoC; //donde se define? que es?
                 }
             } while ((nuevoCodigo != "A") && (nuevoCodigo != "a") && (nuevoCodigo != "B") && (nuevoCodigo != "b") && (nuevoCodigo != "C") && (nuevoCodigo != "c"))
             alert('En la consola te detallamos los productos disponibles de este filtro. Presione 0 para salir de las instrucciones por favor');
             break;
-        case 3:
+        case 3: //mismas correcciones case 2
             let nuevoCodigoB = 0
             do {
                 nuevoCodigoB = prompt('Ingrese la letra correspondiente: A.Shampoo solido B.Acondicionador solido C.Desenrredante natural');
@@ -59,94 +60,48 @@ do {
 } while (codigo != 0);
 
 //1.a Calcular costos totales de la compra realizada por el usuario//
-cod()
-
-class Higiene {
+class Producto {
     constructor(marca, color, estilo) {
         this.marca = marca,
             this.color = color,
             this.tipo = tipo,
             this.precio = parseInt(Math.random() * 10)
-            this.sumaTarjeta = function sumaTarjeta(precio) {
-                return precio * 0.50
-            }
-    }
-    mostrarProducto() {
-        return ('Del producto ' + this.tipo + ' tenemos de la marca ' + this.marca + ' en color ' + this.color + ' y el precio es: ' + this.precio);
-    }
-    mostrarProducto() {
-        return ('Del producto ' + this.tipo + ' tenemos de la marca ' + this.marca + ' en color ' + this.color + ' y el precio es: ' + this.precio);
-    }
-}
-
-class facial {
-    constructor(marca, color, tipo) {
-        this.marca = marca,
-            this.color = color,
-            this.tipo = tipo,
-            this.precio = parseInt(Math.random() * 10)
-            this.sumaTarjeta = function sumaTarjeta(precio) {
-                return precio * 0.50
-            }
-    }
-    mostrarProducto() {
-        return ('Del producto ' + this.tipo + ' tenemos de la marca ' + this.marca + ' en color ' + this.color + ' y el precio es: ' + this.precio);
-    }
-}
-
-class cabello {
-    constructor(marca, color, tipo) {
-        this.marca = marca,
-            this.color = color,
-            this.tipo = tipo,
-            this.precio = parseInt(Math.random() * 10)
-            this.sumaTarjeta = function sumaTarjeta(precio) {
-                return precio * 0.50
-            }
-    }
-    mostrarProducto() {
-        return ('Del producto ' + this.tipo + ' tenemos de la marca ' + this.marca + ' en color ' + this.color + ' y el precio es: ' + this.precio);
-    }
-}
-
-
-let Producto = [
-    new Produto('Kamikaze', 'Blanco', Crema),
-    new Produto('Meraki', 'Azul', Cepillo),
-    new Produto('Maggakup', 'Trasparente', Copita),
-    new Produto('Kamikaze', 'Rosa', Arcilla),
-    new Produto('Nodo', 'Blanco', Desodorante),
-    new Produto('Ecopcion', 'Blanco', Bolsas),
-    new Produto('Maggakup', 'Textura', Toallitas),
-    new Produto('Kamikaze', 'Trasparente', Aceite),
-    new Produto('Ecopcion', 'Gris', Sorbete),
-    new Produto('Meraki', 'Marron', Estuche),
-    new Produto('Nodo', 'Naranja', Bronceador),
-    new Produto('Kalu', 'negro', Jalea),
-    new Produto('Nodo', 'Verde', Pads)
-];
-
-
-function clasificacionProducto(cod) {
-    for (let cod of Higiene) {
-        if (Higiene.Producto == cod) {
-            Higiene.mostrarProducto();
-            console.log(Higiene)
+        this.sumaTarjeta = function sumaTarjeta(precio) {
+            return precio * 0.50
         }
     }
+    mostrarProducto() {
+        return ('Del producto ' + this.tipo + ' tenemos de la marca ' + this.marca + ' en color ' + this.color + ' y el precio es: ' + this.precio);
+    }
 }
 
+let Producto = [ //nombres de array en camelCase
+    new Producto(('Kamikaze', 'Blanco', 'Crema')),
+    new Producto(('Meraki', 'Azul', 'Cepillo')),
+    new Producto(('Maggakup', 'Trasparente', 'Copita')),
+    new Producto(('Kamikaze', 'Rosa', 'Arcilla')),
+    new Producto(('Nodo', 'Blanco', 'Desodorante')),
+    new Producto(('Ecopcion', 'Blanco', 'Bolsas')),
+    new Producto(('Maggakup', 'Textura', 'Toallitas')),
+    new Producto(('Kamikaze', 'Trasparente', 'Aceite')),
+    new Producto(('Ecopcion', 'Gris', 'Sorbete')),
+    new Producto(('Meraki', 'Marron', 'Estuche')),
+    new Producto(('Nodo', 'Naranja', 'Bronceador')),
+    new Producto(('Kalu', 'negro', 'Jalea')),
+    new Producto(('Nodo', 'Verde', 'Pads'))
+];
 
 //1.b Calcular costos totales de la compra realizada por el usuario//
 
-for (let i = 1; i <= 2; i++) {
+for (let i = 1; i <= 2; i++) {  //esto que hace? que costo calcula? como? donde lo muesrta?
     console.log(i)
     if (i == 2) {
         alert("Apurate, esta es nuestra ultima venta")
     }
 }
 
-alert("Nose quedamos sin stock por hoy")
+alert("Nose quedamos sin stock por hoy") //esto no está bien acá: donde querés que se ejecute?
+//acá solo se ejecutaria UNA VEZ: cuando el navegador lea la linea 149 (no cuando se quedó sin stock)
 
 /*let nombreProductoA = "Crema"
 let precioProductoA = 1500
@@ -185,15 +140,16 @@ console.log(productoC["nombre"])
 console.log(productoC["precio"])
 console.log(productoC["stock"])
 
-//Otra forma//
-function Producto(nombre, precio, stock){
+//Otra forma// 
+//esto si es otra forma, pero la más optima es la de clases mas que la de la funcion constructora
+/*function Producto(nombre, precio, stock) {
     this.nombre = nombre
     this.precio = precio
     this.stock = stock
     this.sumaTarjeta = function sumaTarjeta(precio) {
         return precio * 0.50
     }
-    this.sumarStock = function (cantidad){
+    this.sumarStock = function (cantidad) {
         this.stock += cantidad
     }
 }
@@ -242,7 +198,7 @@ for (let i = 0; i < cantidadCompras; i++) {
     } else {
         alert("No tenemos ese producto")
     }
-} 
+}
 
 if (cantidadCompras > 1) {
     alert("Este es el precio total de tu compra:" + precioTotal)
@@ -261,3 +217,4 @@ function calculadora(primerNumero, segundoNumero, operacion) {
             break;
     }
 }
+*/
