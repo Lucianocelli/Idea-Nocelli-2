@@ -1,11 +1,8 @@
 //Saludos de bienvenida//
 alert('BIENVEDNIDX AL CAMBIO (presione F12 para abrir la consola y cerrar para visualizar nuestra pagina)');
 
-<<<<<<< HEAD
 /*function saludar() {
-=======
-function saludar() { //esta función esta bien para practicar, pero no es necesaria
->>>>>>> 601b13062aff5ffb12869ea58bfc6fd01cfdef80
+function saludar()
     console.log("Bienvenidos al cambio");
 }
 saludar()*/
@@ -56,75 +53,33 @@ function cod() {
             break;
         default:
             break;
-    }}
+    }
+}
 
 do {
     cod();
 } while (codigo != 0);
 
 //1.a Calcular costos totales de la compra realizada por el usuario//
-<<<<<<< HEAD
 class Producto {
-=======
-cod() //esto que hace???
-
-class Higiene {
->>>>>>> 601b13062aff5ffb12869ea58bfc6fd01cfdef80
     constructor(marca, color, estilo) {
         this.marca = marca,
             this.color = color,
             this.tipo = tipo,
             this.precio = parseInt(Math.random() * 10)
-<<<<<<< HEAD
         this.sumaTarjeta = function sumaTarjeta(precio) {
             return precio * 0.50
         }
-=======
-            this.sumaTarjeta = function sumaTarjeta(precio) {
-                return precio * 0.50
-            }
-    }
-    mostrarProducto() {
-        return ('Del producto ' + this.tipo + ' tenemos de la marca ' + this.marca + ' en color ' + this.color + ' y el precio es: ' + this.precio);
-    }
-    mostrarProducto() { //esto esta repetido
-        return ('Del producto ' + this.tipo + ' tenemos de la marca ' + this.marca + ' en color ' + this.color + ' y el precio es: ' + this.precio);
-    }
-}
-
-class facial { //nombres de clases e mayusculas
-    constructor(marca, color, tipo) {
-        this.marca = marca,
-            this.color = color,
-            this.tipo = tipo,
-            this.precio = parseInt(Math.random() * 10)
-            this.sumaTarjeta = function sumaTarjeta(precio) {
-                return precio * 0.50
-            }
+        this.sumaTarjeta = function sumaTarjeta(precio) {
+            return precio * 0.50
+        }
     }
     mostrarProducto() {
         return ('Del producto ' + this.tipo + ' tenemos de la marca ' + this.marca + ' en color ' + this.color + ' y el precio es: ' + this.precio);
     }
 }
 
-class cabello { //las clases higiene facial y cabello son iguales: no te conviene hacer una unica clase que se llame producto? cual seria el motivo de tener tres clases diferentes?
-    constructor(marca, color, tipo) {
-        this.marca = marca,
-            this.color = color,
-            this.tipo = tipo,
-            this.precio = parseInt(Math.random() * 10)
-            this.sumaTarjeta = function sumaTarjeta(precio) {
-                return precio * 0.50
-            }
->>>>>>> 601b13062aff5ffb12869ea58bfc6fd01cfdef80
-    }
-    mostrarProducto() {
-        return ('Del producto ' + this.tipo + ' tenemos de la marca ' + this.marca + ' en color ' + this.color + ' y el precio es: ' + this.precio);
-    }
-}
-
-<<<<<<< HEAD
-let Producto = [ productoA, productoB, productoC, productoD, productoE, productoF, //nombres de array en camelCase
+let Producto = [productoA, productoB, productoC, productoD, productoE, productoF, //nombres de array en camelCase
     new Producto(('Kamikaze', 'Blanco', 'Crema')),
     new Producto(('Meraki', 'Azul', 'Cepillo')),
     new Producto(('Maggakup', 'Trasparente', 'Copita')),
@@ -140,172 +95,129 @@ let Producto = [ productoA, productoB, productoC, productoD, productoE, producto
     new Producto(('Nodo', 'Verde', 'Pads'))
 ];
 
-//1.b Calcular costos totales de la compra realizada por el usuario//
+    /*let nombreProductoA = "Crema"
+    let precioProductoA = 1500
+    let stockProductoA = 10
 
-for (let i = 1; i <= 2; i++) {  //esto que hace? que costo calcula? como? donde lo muesrta?
-=======
-let producto = [
-//let Producto = [ //nombres de array en camelCase
-    new Producto(('Kamikaze', 'Blanco', 'Crema')), //usar el constructor correcto (Producto)
-    new Produto('Kamikaze', 'Blanco', Crema), //los textos van entre comillas
-    new Produto('Meraki', 'Azul', Cepillo), //creaste una cuarta clase Producto y no usaste las anteriores: ojo!
-    new Produto('Maggakup', 'Trasparente', Copita),
-    new Produto('Kamikaze', 'Rosa', Arcilla),
-    new Produto('Nodo', 'Blanco', Desodorante),
-    new Produto('Ecopcion', 'Blanco', Bolsas),
-    new Produto('Maggakup', 'Textura', Toallitas),
-    new Produto('Kamikaze', 'Trasparente', Aceite),
-    new Produto('Ecopcion', 'Gris', Sorbete),
-    new Produto('Meraki', 'Marron', Estuche),
-    new Produto('Nodo', 'Naranja', Bronceador),
-    new Produto('Kalu', 'negro', Jalea),
-    new Produto('Nodo', 'Verde', Pads)
-];
+    let nombreProductoB = "Shampoo"
+    let precioProductoB = 2000
+    let stockProductoB = 50 */
 
+    //Lo mismo que arriba pero todo junto// 
 
-function clasificacionProducto(cod) { //esto que hace? no entiendo
-    for (let cod of Higiene) {
-        if (Higiene.Producto == cod) {
-            Higiene.mostrarProducto();
-            console.log(Higiene)
+    let productoA = { 
+        nombre: "Crema",
+        precio: 1500,
+        stock: 10
+    }
+
+    let productoB = { 
+        nombre: "Shampoo",
+        precio: 2000,
+        stock: 50
+    }
+
+    console.log(productoB.nombre)
+    console.log(productoB.precio)
+    console.log(productoB.stock)
+
+    //Otra forma// 
+    const productoC = {
+        nombre: "Copita",
+        precio: 3500,
+        stock: 20
+    }
+
+    console.log(productoC["nombre"])
+    console.log(productoC["precio"])
+    console.log(productoC["stock"]) 
+
+    //Otra forma//
+    function Producto(nombre, precio, stock){
+        this.nombre = nombre
+        this.precio = precio
+        this.stock = stock
+        this.sumaTarjeta = function sumaTarjeta(precio) {
+            return precio * 0.50
+        }
+        this.sumarStock = function (cantidad) {
+            this.stock += cantidad
         }
     }
-}
 
+    const productoD = new Producto("Pad", 500, 150)
+    const productoE = new Producto("Sorbete", 350, 500)
+    const productoF = new Producto("Bolsa", 1000, 50)
 
-//1.b Calcular costos totales de la compra realizada por el usuario//
+    productoD.sumaTarjeta()
+    productoE.sumaTarjeta()
+    productoF.sumaTarjeta()
 
-for (let i = 1; i <= 2; i++) { //esto que hace? que costo calcula? como? donde lo muesrta?
->>>>>>> 601b13062aff5ffb12869ea58bfc6fd01cfdef80
-    console.log(i)
-    if (i == 2) {
-        alert("Apurate, esta es nuestra ultima venta")
-    }
-}
+    productoD.sumarStock(cantidad1)
+    
+/*
+    let cantidadCompras = prompt("Ingrese la cantidad de productos distintos que quiere comprar: \n- Shampoo\n- Crema")
+    let precioTotal = 0;
 
-alert("Nose quedamos sin stock por hoy") //esto no está bien acá: donde querés que se ejecute?
-//acá solo se ejecutaria UNA VEZ: cuando el navegador lea la linea 149 (no cuando se quedó sin stock)
-
-/*let nombreProductoA = "Crema"
-let precioProductoA = 1500
-let stockProductoA = 10
-
-let nombreProductoB = "Shampoo"
-let precioProductoB = 2000
-let stockProductoB = 50*/
-
-//Lo mismo que arriba pero todo junto//
-
-let productoA = { //ya creaste productos con clases, esto no es necesario
-    nombre: "Crema",
-    precio: 1500,
-    stock: 10
-}
-
-let productoB = { //ya creaste productos con clases, esto no es necesario
-    nombre: "Shampoo",
-    precio: 2000,
-    stock: 50
-}
-
-console.log(productoB.nombre)
-console.log(productoB.precio)
-console.log(productoB.stock)
-
-//Otra forma// 
-const productoC = { //creaste el producto de la misma forma
-    nombre: "Copita",
-    precio: 3500,
-    stock: 20
-}
-
-console.log(productoC["nombre"])
-console.log(productoC["precio"])
-console.log(productoC["stock"])
-
-<<<<<<< HEAD
-//Otra forma// 
-//esto si es otra forma, pero la más optima es la de clases mas que la de la funcion constructora
-/*function Producto(nombre, precio, stock) {
-=======
-//Otra forma//
-function Producto(nombre, precio, stock){ //esto si es otra forma, pero la más optima es la de clases mas que la de la funcion constructora
->>>>>>> 601b13062aff5ffb12869ea58bfc6fd01cfdef80
-    this.nombre = nombre
-    this.precio = precio
-    this.stock = stock
-    this.sumaTarjeta = function sumaTarjeta(precio) {
+    function sumaTarjeta(precio) {
         return precio * 0.50
     }
-    this.sumarStock = function (cantidad) {
-        this.stock += cantidad
-    }
-}
 
-const productoD = new Producto("Pad", 500, 150)
-const productoE = new Producto("Sorbete", 350, 500)
-const productoF = new Producto("Bolsa", 1000, 50)
+    for (let i = 0; i < cantidadCompras; i++) {
 
-productoD.sumaTarjeta()
-productoE.sumaTarjeta()
-productoF.sumaTarjeta()
+        let compra1 = prompt("Ingrese el nombre del producto que quiere comprer: \n- Shampoo\n- Crema")
+        let cantidad1 = prompt("Ingrese la cantidad de unidades que quiera comprar")
 
-productoD.sumarStock(cantidad1)
+        if (compra1 == "Shampoo") {
+            calculoStock(cantidad1, productoB.stock, productoB.precio)
+            if (productoB.stock >= cantidad1) {
+                precioTotal += cantidad1 * productoB.precio
+                alert("El precio total es de: $" + (cantidad1 * productoB.precio))
+            } else {
+                alert("No disponemos de esa cantidad en stock actualmente. Nuestro stock actual es de: " + productoB.stock + "unidades")
+            }
+        } else if (compra1 == "Crema") {
+            calculoStock(cantidad1, productoA.stock, productoA.precio)
+            if (productoA.stock >= cantidad1) {
+                precioTotal += cantidad1 * productoA.precio
+                alert("El precio total es de: $" + (cantidad1 * productoA.precio))
+            } else {
+                alert("No disponemos de esa cantidad en stock actualmente. Nuestro stock actual es de: " + productoA.stock + "unidades")
+            }
 
-//esto es codigo viejo no???
-//lo que tu codigo nuevo no use: BORRALO O COMENTALO
-//ya que de lo contrario se pisan y puede traerte muchos errores
-//de hecho ahora hay muchos errores justamente por este tema y por este tema: el programa no funciona :(
-
-let cantidadCompras = prompt("Ingrese la cantidad de productos distintos que quiere comprar: \n- Shampoo\n- Crema")
-let precioTotal = 0;
-
-function sumaTarjeta(precio) {
-    return precio * 0.50
-}
-
-for (let i = 0; i < cantidadCompras; i++) {
-
-    let compra1 = prompt("Ingrese el nombre del producto que quiere comprer: \n- Shampoo\n- Crema")
-    let cantidad1 = prompt("Ingrese la cantidad de unidades que quiera comprar")
-
-    if (compra1 == "Shampoo") {
-        calculoStock(cantidad1, productoB.stock, productoB.precio)
-        if (productoB.stock >= cantidad1) {
-            precioTotal += cantidad1 * productoB.precio
-            alert("El precio total es de: $" + (cantidad1 * productoB.precio))
         } else {
-            alert("No disponemos de esa cantidad en stock actualmente. Nuestro stock actual es de: " + productoB.stock + "unidades")
+            alert("No tenemos ese producto")
         }
-    } else if (compra1 == "Crema") {
-        calculoStock(cantidad1, productoA.stock, productoA.precio)
-        if (productoA.stock >= cantidad1) {
-            precioTotal += cantidad1 * productoA.precio
-            alert("El precio total es de: $" + (cantidad1 * productoA.precio))
-        } else {
-            alert("No disponemos de esa cantidad en stock actualmente. Nuestro stock actual es de: " + productoA.stock + "unidades")
+    }
+
+    if (cantidadCompras > 1) {
+        alert("Este es el precio total de tu compra:" + precioTotal)
+    }
+
+    function calculadora(primerNumero, segundoNumero, operacion) {
+        switch (operacion) {
+            case "+":
+                return primerNumero + segundoNumero;
+                break;
+            case "*":
+                return primerNumero * segundoNumero;
+                break;
+            default:
+                return 0;
+                break;
         }
-
-    } else {
-        alert("No tenemos ese producto")
     }
-}
+    */
 
-if (cantidadCompras > 1) {
-    alert("Este es el precio total de tu compra:" + precioTotal)
-}
+    const productoL = new Producto ("Toalla", 100, 60) 
+    const productoM = new Producto ("Aceite", 270, 20)
+    
+    let listaProductos = [productoA, productoB, productoC, productoL, productoM,]
 
-function calculadora(primerNumero, segundoNumero, operacion) {
-    switch (operacion) {
-        case "+":
-            return primerNumero + segundoNumero;
-            break;
-        case "*":
-            return primerNumero * segundoNumero;
-            break;
-        default:
-            return 0;
-            break;
+    let listaProductos = []
+    function listaProductos(){
+        for(const producto of listaProductos){
+            nombresProductos.push(producto.nombre)
+        }
     }
-}
-*/
+    listaProductos()
