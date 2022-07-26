@@ -75,7 +75,7 @@ class Producto {
     }
 }
 
-let Producto = [ //nombres de array en camelCase
+let Producto = [ productoA, productoB, productoC, productoD, productoE, productoF, //nombres de array en camelCase
     new Producto(('Kamikaze', 'Blanco', 'Crema')),
     new Producto(('Meraki', 'Azul', 'Cepillo')),
     new Producto(('Maggakup', 'Trasparente', 'Copita')),
