@@ -79,7 +79,7 @@ class Producto {
     }
 }
 
-let Producto = [productoA, productoB, productoC, productoD, productoE, productoF, //nombres de array en camelCase
+let productos = [productoA, productoB, productoC, productoD, productoE, productoF, //nombres de array en camelCase
     new Producto(('Kamikaze', 'Blanco', 'Crema')),
     new Producto(('Meraki', 'Azul', 'Cepillo')),
     new Producto(('Maggakup', 'Trasparente', 'Copita')),
@@ -133,7 +133,7 @@ let Producto = [productoA, productoB, productoC, productoD, productoE, productoF
     console.log(productoC["stock"]) 
 
     //Otra forma//
-    function Producto(nombre, precio, stock){
+/*     function Producto(nombre, precio, stock){
         this.nombre = nombre
         this.precio = precio
         this.stock = stock
@@ -143,7 +143,7 @@ let Producto = [productoA, productoB, productoC, productoD, productoE, productoF
         this.sumarStock = function (cantidad) {
             this.stock += cantidad
         }
-    }
+    } */
 
     const productoD = new Producto("Pad", 500, 150)
     const productoE = new Producto("Sorbete", 350, 500)
@@ -214,10 +214,14 @@ let Producto = [productoA, productoB, productoC, productoD, productoE, productoF
     
     let listaProductos = [productoA, productoB, productoC, productoL, productoM,]
 
-    let listaProductos = []
-    function listaProductos(){
+    let nombresProductos = []
+    function listado(){
         for(const producto of listaProductos){
             nombresProductos.push(producto.nombre)
         }
     }
-    listaProductos()
+    listado()
+
+    //CHEQUEAR LOS NOMBRES
+    //REVISAR LOGICAS/VARIABLES REPETIDAS (LO REPETIDO QUE NO USES: COMENTALO PORFA)
+    //REVISAR CONDICIONALES E ITERACIONES! TIENEN ALGUNAS FALLAS
