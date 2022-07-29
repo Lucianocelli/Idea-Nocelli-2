@@ -56,7 +56,6 @@ console.log(productoB["categoria"])
     console.log(productoC["stock"]) 
     console.log(productoC["categoria"]) 
 
-    let productos = [productoD, productoE, productoF, productoG, productoH, productoI]
     const productoD = new Producto(('Jalea', 1150, 230, 'Higiene'))
     const productoE = new Producto(('Hisopos', 110, 140, 'Higiene'))
     const productoF = new Producto(('Crema', 900, 20, 'Belleza'))
@@ -64,7 +63,7 @@ console.log(productoB["categoria"])
     const productoH = new Producto(('Acondicionador', 1050, 20, 'Cabello'))
     const productoI = new Producto(('Desenrredante', 750, 150, 'Cabello'))
 
-    let listaProductos = [productoA, productoB, productoC, productoD, productoE, productoF, productoG, productoH, productoI ]
+    let listaProductos = [productoA, productoB, productoC, productoD, productoE, productoF, productoG, productoH, productoI]
 
     let nombresProductos = []
     function listado(){
@@ -74,7 +73,7 @@ console.log(productoB["categoria"])
     }
     listado()
 
-//Definir tarea a realizar//
+//Definir tarea a realizar 1//
 let codigo = 0
 
 function cod() {
@@ -126,7 +125,6 @@ function cod() {
     }
 }
 
-
 do {
     cod();
 } while (codigo != 0);
@@ -160,7 +158,8 @@ function calculoStock(cantidad, producto){
     }
 }
 
-/* y si uso este metodo? en lugar del anterior con los 3 casos
+//Definir tarea a realizar 2//
+/*y si uso este metodo? en lugar del anterior con los 3 casos
 function compra(){
 
     for(let i = 0; i < cantidadCompras; i++){
@@ -213,3 +212,5 @@ function compra(){
     alert("Este es el precio total final con impuestos de tu compra: " + precioToTalConImpuestos) 
 
 } */
+
+
