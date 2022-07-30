@@ -1,7 +1,7 @@
 //Saludos de bienvenida//
+
 alert('BIENVEDNIDX AL CAMBIO (presione F12 para abrir la consola y cerrar para visualizar nuestra pagina)');
 let nombre = prompt("Ingrese su nombre:")
-
 alert("Bienvenido " + nombre + "." + " Continua para realizar tu compra")
 
 //Productos//
@@ -13,12 +13,12 @@ class Producto {
             this.stock = stock,
             this.categoria = categoria
             this.precio = parseInt(Math.random() * 10)
-        this.sumaTarjeta = function sumaTarjeta(precio) {
+        this.sumaTarjeta = function sumaTarjeta(precio) { //los metodos de las clases se usan como mostrarProducto! CORREGIR POR FAVOR
             return precio * 0.50
         }
-        this.sumarStock = function (cantidad){ this.stock += cantidad}
+        this.sumarStock = function (cantidad){ this.stock += cantidad} //los metodos de las clases se usan como mostrarProducto! CORREGIR POR FAVOR
     }
-    mostrarProducto() {
+    mostrarProducto() { //donde usas este metodo? si lo usaste para practicar ESTA BIEN!
         return ('Del producto ' + this.nombre + ' tenemos ' + this.stock + ' y el precio es: ' + this.precio);
     }
 }
@@ -79,16 +79,16 @@ let codigo = 0
 function cod() {
     codigo = parseInt(prompt('Ingrese el numero del area que te interesa: 1.Higiene personal  2.Belleza facial 3.Cuidado del cabello 0.Salir'));
     switch (codigo) {
-        case 1:
-            let nuevoCodigoA = 0
+        case 1: //en una primera instancia de aprendizaje esta bien usar los condicionales y switch para esto: PERO ESTO NO ES CORRECTO YA QUE SI OBSERVAS TODAS LAS CONDICIONES SON IGUALES
+            let nuevoCodigoA = 0 //pero ya aprendimos las funciones de orden superior: USARLAS! NOS SIMPLIFICAN LA VIDA!
             do {
                 nuevoCodigoA = prompt('Ingrese la letra correspondiente: A.Copa menstual B.Jalea depilatoria C.Hisopos de bamboo');
                 if ((nuevoCodigoA == "A") || (nuevoCodigoA == "a")) {
-                    clasificacionProductoC; 
+                    clasificacionProductoC; //QUE ES ESTO? DONDE LO DEFINIS? QUE DEBERIA HACER?
                 } else if ((nuevoCodigoA == "B") || (nuevoCodigoA == "b")) {
-                    clasificacionProductoD; 
+                    clasificacionProductoD; //QUE ES ESTO? DONDE LO DEFINIS? QUE DEBERIA HACER?
                 } else if ((nuevoCodigoA == "C") || (nuevoCodigoA == "c")) {
-                    clasificacionProductoE; 
+                    clasificacionProductoE; //QUE ES ESTO? DONDE LO DEFINIS? QUE DEBERIA HACER?
                 }
             } while ((nuevoCodigoA != "A") && (nuevoCodigoA != "a") && (nuevoCodigoA != "B") && (nuevoCodigoA != "b") && (nuevoCodigoA != "C") && (nuevoCodigoA != "c"))
             break;
@@ -96,13 +96,13 @@ function cod() {
         case 2:
             let nuevoCodigoB = 0
             do {
-                nuevoCodigo = prompt('Ingrese la letra correspondiente: A.Exfoliante natural de arcilla verde B.Crema de Pulpa  C.Agua de rosas');
+                nuevoCodigoB = prompt('Ingrese la letra correspondiente: A.Exfoliante natural de arcilla verde B.Crema de Pulpa  C.Agua de rosas');
                 if ((nuevoCodigoB == "A") || (nuevoCodigoB == "a")) {
-                    clasificacionProductoA; 
+                    clasificacionProductoA; //QUE ES ESTO? DONDE LO DEFINIS? QUE DEBERIA HACER?
                 } else if ((nuevoCodigoB == "B") || (nuevoCodigoB == "b")) {
-                    clasificacionProductoF; 
+                    clasificacionProductoF; //QUE ES ESTO? DONDE LO DEFINIS? QUE DEBERIA HACER?
                 } else if ((nuevoCodigoB == "C") || (nuevoCodigoB == "c")) {
-                    clasificacionProductoG; 
+                    clasificacionProductoG; //QUE ES ESTO? DONDE LO DEFINIS? QUE DEBERIA HACER?
                 }
             } while ((nuevoCodigoB != "A") && (nuevoCodigoB != "a") && (nuevoCodigo != "B") && (nuevoCodigoB != "b") && (nuevoCodigoB != "C") && (nuevoCodigoB != "c"))
             break;
@@ -110,13 +110,13 @@ function cod() {
         case 3:
             let nuevoCodigoC = 0
             do {
-                nuevoCodigoB = prompt('Ingrese la letra correspondiente: A.Shampoo solido B.Acondicionador solido C.Desenrredante natural');
+                nuevoCodigoC = prompt('Ingrese la letra correspondiente: A.Shampoo solido B.Acondicionador solido C.Desenrredante natural');
                 if ((nuevoCodigoC == "A") || (nuevoCodigoC == "a")) {
-                    clasificacionProductoB;
+                    clasificacionProductoB; //QUE ES ESTO? DONDE LO DEFINIS? QUE DEBERIA HACER?
                 } else if ((nuevoCodigoC == "B") || (nuevoCodigoC == "b")) {
-                    clasificacionProductoH;
+                    clasificacionProductoH; //QUE ES ESTO? DONDE LO DEFINIS? QUE DEBERIA HACER?
                 } else if ((nuevoCodigoC == "C") || (nuevoCodigoC == "c")) {
-                    clasificacionProductoI;
+                    clasificacionProductoI; //QUE ES ESTO? DONDE LO DEFINIS? QUE DEBERIA HACER?
                 }
             } while ((nuevoCodigoC != "A") && (nuevoCodigoC != "a") && (nuevoCodigoC != "B") && (nuevoCodigoC != "b") && (nuevoCodigoC != "C") && (nuevoCodigoC != "c"))
             break;
@@ -140,7 +140,8 @@ function inputHandler(e){
 
 let input = document.getElementById("cantidadCompra")
 
-input.addEventListener("input", inputHandler)
+//input.addEventListener("input", inputHandler) //ESTO DA ERROR
+//TODO LO QUE NO TE FUNCIONE Y DE ERROR: COMENTALO Y LO SUMO ME PREGUNTAS COMO RESOLVERLO
 
 let precioTotal = 0;
 
