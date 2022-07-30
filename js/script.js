@@ -1,7 +1,7 @@
 //Saludos de bienvenida//
 alert('BIENVEDNIDX AL CAMBIO (presione F12 para abrir la consola y cerrar para visualizar nuestra pagina)');
+let nombre = prompt("Ingrese su nombre:")
 
-let nombre = prompt("Ingrese su nombre:");
 alert("Bienvenido " + nombre + "." + " Continua para realizar tu compra")
 
 //Productos//
